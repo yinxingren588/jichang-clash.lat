@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="durianBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="200" height="200" rx="44" fill="url(#bgGrad)"/>
+  <rect width="196" height="196" x="2" y="2" rx="42" fill="none" stroke="#F59E0B" stroke-width="2" stroke-opacity="0.25"/>
+
+  <!-- Subtle glow aura -->
+  <circle cx="100" cy="100" r="56" fill="#F59E0B" opacity="0.15" filter="url(#glow)"/>
+
+  <!-- Durian Shell with Golden Thorns Silhouette -->
+  <g transform="translate(100, 95)">
+    <!-- Spikes radiating outward -->
+    <path d="M 0,-52 L -8,-40 L 8,-40 Z" fill="#D97706"/>
+    <path d="M -28,-42 L -32,-30 L -18,-34 Z" fill="#D97706"/>
+    <path d="M 28,-42 L 18,-34 L 32,-30 Z" fill="#D97706"/>
+    <path d="M -48,-20 L -46,-8 L -36,-16 Z" fill="#D97706"/>
+    <path d="M 48,-20 L 36,-16 L 46,-8 Z" fill="#D97706"/>
+    <path d="M -54,8 L -48,18 L -40,8 Z" fill="#D97706"/>
+    <path d="M 54,8 L 40,8 L 48,18 Z" fill="#D97706"/>
+    <path d="M -44,32 L -32,38 L -32,24 Z" fill="#D97706"/>
+    <path d="M 44,32 L 32,24 L 32,38 Z" fill="#D97706"/>
+    <path d="M -22,48 L -10,50 L -16,36 Z" fill="#D97706"/>
+    <path d="M 22,48 L 16,36 L 10,50 Z" fill="#D97706"/>
+    <path d="M 0,55 L -8,42 L 8,42 Z" fill="#D97706"/>
+
+    <!-- Main Durian Body (Oval / Fruit shape) -->
+    <ellipse cx="0" cy="4" rx="42" ry="46" fill="url(#durianBody)"/>
+
+    <!-- Durian Segments Lines / Golden Textures -->
+    <path d="M 0,-40 C -18,-20 -20,20 0,46" fill="none" stroke="#B45309" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M 0,-40 C 18,-20 20,20 0,46" fill="none" stroke="#B45309" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M 0,-40 L 0,46" fill="none" stroke="#B45309" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+
+    <!-- Top Stem and Leaf -->
+    <path d="M 0,-42 C 0,-52 8,-58 14,-62 C 12,-55 8,-50 3,-44" fill="#78350F"/>
+    <path d="M 4,-48 C 16,-56 30,-52 34,-44 C 26,-42 16,-42 4,-48" fill="url(#leafGrad)"/>
+
+    <!-- Cloud Base overlay symbolizing "榴莲云" -->
+    <path d="M -36,28 C -36,22 -30,16 -22,16 C -20,10 -12,6 -4,8 C 4,5 14,8 18,14 C 26,14 32,20 32,28 C 36,28 38,32 38,36 C 38,42 32,46 26,46 L -30,46 C -36,46 -40,42 -40,36 C -40,32 -38,28 -36,28 Z" fill="url(#cloudGrad)" opacity="0.95" filter="url(#glow)"/>
+
+    <!-- Speed Lightning Bolt inside Cloud -->
+    <polygon points="-2,18 8,18 2,28 10,28 -6,44 -1,32 -8,32" fill="#F59E0B"/>
+  </g>
+
+  <!-- Sparkles -->
+  <path d="M 154,54 L 157,64 L 167,67 L 157,70 L 154,80 L 151,70 L 141,67 L 151,64 Z" fill="#FDE047" opacity="0.85"/>
+  <circle cx="46" cy="62" r="3" fill="#FDE047" opacity="0.75"/>
+  <circle cx="158" cy="142" r="2.5" fill="#FBBF24" opacity="0.6"/>
+</svg>

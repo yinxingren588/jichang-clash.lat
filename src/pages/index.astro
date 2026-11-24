@@ -1,0 +1,234 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AirportCard from '../components/AirportCard.astro';
+import ComparisonTable from '../components/ComparisonTable.astro';
+import ClientGuide from '../components/ClientGuide.astro';
+import { airportsData, filterTabs } from '../data/airports';
+import { faqList } from '../data/faqs';
+---
+
+<BaseLayout>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-blue-50/70 via-white to-slate-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-950 pt-16 pb-20 border-b border-slate-200/60 dark:border-slate-800">
+    <!-- Glow effect behind hero -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-gradient-to-tr from-blue-400/20 via-indigo-500/20 to-purple-500/20 blur-3xl pointer-events-none rounded-full"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      
+      <!-- Top Pill -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100/80 dark:bg-blue-950/80 text-blue-700 dark:text-blue-300 text-xs sm:text-sm font-semibold border border-blue-200/80 dark:border-blue-800">
+        <span class="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
+        <span>2026 全球优质网络节点质量监测 · 晚高峰实测数据发布</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tight">
+        全球跨境专线 · <span class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">机场clash</span> 权威评测与推荐平台
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="max-w-3xl mx-auto text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+        基于中国电信、联通、移动三网晚高峰全维度压力实测，严选企业级 IPLC/IEPL 国际物理专线与顶级 BGP 高冗余中继。全节点保障 4K/8K 超高清影音秒开、原生住宅 IP 深度解锁 Netflix、Disney+ 与 ChatGPT / Claude 全球 AI 生态，为外贸出海、学术科研及极客玩家提供可靠的选型与配置指南。
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <a
+          href="/airports"
+          class="px-6 py-3.5 rounded-xl font-bold text-white bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/35 transition-all text-sm sm:text-base flex items-center gap-2"
+        >
+          <span>🔥 浏览 2026 精选专线榜单</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+        <a
+          href="/tutorials/clash-guide"
+          class="px-6 py-3.5 rounded-xl font-bold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition-all text-sm sm:text-base"
+        >
+          📘 Clash 客户端极速配置指南
+        </a>
+      </div>
+
+      <!-- Trust Metrics Badges -->
+      <div class="pt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-left">
+        <div class="bg-white/70 dark:bg-slate-800/60 backdrop-blur p-4 rounded-xl border border-slate-200/60 dark:border-slate-700/60">
+          <div class="text-2xl font-black text-blue-600 dark:text-blue-400">100%</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">全链路真实测速 · 三网晚高峰压力验证</div>
+        </div>
+        <div class="bg-white/70 dark:bg-slate-800/60 backdrop-blur p-4 rounded-xl border border-slate-200/60 dark:border-slate-700/60">
+          <div class="text-2xl font-black text-indigo-600 dark:text-indigo-400">8K 秒开</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">千兆冗余物理骨干 · 超低网络抖动</div>
+        </div>
+        <div class="bg-white/70 dark:bg-slate-800/60 backdrop-blur p-4 rounded-xl border border-slate-200/60 dark:border-slate-700/60">
+          <div class="text-2xl font-black text-purple-600 dark:text-purple-400">IPLC 专线</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">企业级物理专线 · 抗封锁高可用架构</div>
+        </div>
+        <div class="bg-white/70 dark:bg-slate-800/60 backdrop-blur p-4 rounded-xl border border-slate-200/60 dark:border-slate-700/60">
+          <div class="text-2xl font-black text-emerald-600 dark:text-emerald-400">独家特惠</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">官方直通专属权益 · 大额立减折扣码</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Airport Showcase Section -->
+  <section id="airports" class="max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+      <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">
+        🏆 2026 精选高速 Clash 机场推荐榜
+      </h2>
+      <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400">
+        综合考量了线路稳定性、晚高峰网络抖动、流媒体与 AI 工具解锁、客服响应速度及价格性价比多项核心指标。
+      </p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+      {filterTabs.map((tab, idx) => (
+        <button
+          type="button"
+          data-filter={tab.id}
+          class={`filter-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all border border-slate-200 dark:border-slate-700 cursor-pointer ${
+            idx === 0
+              ? 'bg-blue-600 text-white shadow-sm'
+              : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:border-blue-400'
+          }`}
+        >
+          {tab.label}
+        </button>
+      ))}
+    </div>
+
+    <!-- Cards Grid: 隐形人占满第一排，其余一排五个 -->
+    <div id="airports-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+      {airportsData.map((airport, index) => (
+        <AirportCard airport={airport} index={index} isFeatured={index === 0} />
+      ))}
+    </div>
+  </section>
+
+  <!-- Comparison Matrix Section -->
+  <section id="comparison" class="max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-200 dark:border-slate-800">
+    <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+      <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">
+        📊 推荐机场核心参数横向对比
+      </h2>
+      <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400">
+        一览各家机场的价格门槛、线路类型、测速表现与优惠码，方便根据自身需求快速抉择。
+      </p>
+    </div>
+
+    <ComparisonTable />
+  </section>
+
+  <!-- 3-Step Setup Guide -->
+  <section class="bg-blue-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+        <h2 class="text-3xl font-extrabold">🚀 三步快速上手 Clash 极速上网</h2>
+        <p class="text-blue-100 text-sm sm:text-base">无需复杂网络知识，跟随简单三步指南即可畅享全球高速互联网</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-blue-700/50 backdrop-blur rounded-2xl p-6 border border-blue-500/30 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-white text-blue-600 font-extrabold text-lg flex items-center justify-center">1</div>
+          <h3 class="text-lg font-bold">选购心仪机场套餐</h3>
+          <p class="text-xs sm:text-sm text-blue-100 leading-relaxed">
+            在本站推荐列表中挑选适合自己的机场（如隐形人、暮光加速或微风网络），复制专属折扣码前往官网完成注册并开通套餐。
+          </p>
+        </div>
+
+        <div class="bg-blue-700/50 backdrop-blur rounded-2xl p-6 border border-blue-500/30 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-white text-blue-600 font-extrabold text-lg flex items-center justify-center">2</div>
+          <h3 class="text-lg font-bold">下载客户端并导入订阅</h3>
+          <p class="text-xs sm:text-sm text-blue-100 leading-relaxed">
+            根据您的操作系统下载 Clash Verge Rev 或小火箭，登录机场后台点击【一键导入】或复制订阅链接粘贴至客户端下载配置。
+          </p>
+        </div>
+
+        <div class="bg-blue-700/50 backdrop-blur rounded-2xl p-6 border border-blue-500/30 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-white text-blue-600 font-extrabold text-lg flex items-center justify-center">3</div>
+          <h3 class="text-lg font-bold">选择节点开启代理</h3>
+          <p class="text-xs sm:text-sm text-blue-100 leading-relaxed">
+            在代理列表选择一个低延迟节点（如香港 IPLC 专线），点击打开【系统代理 / System Proxy】开关，即可立即畅游网络！
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a
+          href="/tutorials/clash-guide"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-blue-700 font-bold hover:bg-blue-50 shadow-md transition-colors text-sm"
+        >
+          查看图文详细新手配置指南 &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clash Clients Download Section -->
+  <section id="clients" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+      <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">
+        📱 主流 Clash / 代理客户端官方下载
+      </h2>
+      <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400">
+        本站只提供官方开源 Releases 及 App Store 正规下载渠道，杜绝任何第三方修改版病毒或木马后门风险。
+      </p>
+    </div>
+
+    <ClientGuide />
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faqs" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-200 dark:border-slate-800">
+    <div class="text-center mb-10 space-y-3">
+      <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white">
+        ❓ 翻墙新手避坑与常见疑问 (FAQ)
+      </h2>
+      <p class="text-sm text-slate-500 dark:text-slate-400">
+        整理了从选购机场、专线原理到 Clash 常见报错解决的最核心问答。
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      {faqList.slice(0, 8).map(item => (
+        <details class="group bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700/80 p-5 open:shadow-md transition-all">
+          <summary class="flex items-center justify-between font-bold text-slate-900 dark:text-white cursor-pointer list-none text-base">
+            <span class="hover:text-blue-600 transition-colors">{item.q}</span>
+            <span class="w-6 h-6 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-500 group-open:rotate-180 transition-transform shrink-0 ml-4">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 leading-relaxed whitespace-pre-line">
+            {item.a}
+            <div class="mt-3 pt-2.5 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between text-xs">
+              <span class="text-slate-400">支持独立专属页面</span>
+              <a
+                href={`/faq/${item.slug}`}
+                class="inline-flex items-center gap-1 font-bold text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                <span>阅读该问题独立解答页</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </details>
+      ))}
+    </div>
+
+    <div class="text-center pt-8">
+      <a
+        href="/faq"
+        class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md transition-all"
+      >
+        <span>查看完整 58 个核心 FAQ 问答中心 (支持 5 大分类系统查阅)</span>
+        <span>&rarr;</span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

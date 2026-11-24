@@ -1,0 +1,2597 @@
+[
+  {
+    "id": 1,
+    "brand_name": "隐形人 (Invisible Network)",
+    "slug": "brand-yinxingren.html",
+    "logo_url": "https://jichangbang.top/assets/invisible-network-logo.jpg",
+    "line_type": "全 IEPL 物理专线",
+    "rating": "9.8 / 10 卓越 (天梯榜综合 NO.1 · 本站首推)",
+    "tagline": "以星耀风暴年付衔接白银至星空周期订阅，微光随行等一次性包与多端接入说明详备。晚高峰超低丢包，全节点真实 1x 倍率。",
+    "core_features": [
+      "全 IEPL 物理专线，晚高峰 0.8% 极低丢包",
+      "全节点统一 1.0x 真实计费倍率，全程不限速",
+      "不限制同时在线设备数量",
+      "流媒体 4K/8K 与 ChatGPT/Claude 原生纯净 IP 解锁",
+      "自研 Windows/macOS/Android 客户端，iOS 支持 Nextin (品牌码 yxr) 及小火箭",
+      "24 小时技术退款保障"
+    ],
+    "coupon_code": "yxr888 (全场通用 8 折优惠券)",
+    "starting_price": {
+      "yearly_starting": "¥87.20/年 (原价 ¥109/年，8折券后折合 ¥7.27/月)",
+      "monthly_starting": "¥19.20/月 (原价 ¥24/月，8折券后)"
+    },
+    "official_url": "https://varnexa.invisibleaff.com/#/?code=JF4seZUy",
+    "packages": [
+      {
+        "name": "星耀风暴 · 365天不熄 (年付力荐)",
+        "traffic": "80 GB / 每30天刷新",
+        "price": "¥109 / 年",
+        "discounted_price": "8折券后实付 ¥87.20 /年（约 ¥7.27/月）",
+        "features": [
+          "全 IEPL 物理专线",
+          "1x 倍率不限速",
+          "不限设备数",
+          "4K & ChatGPT 原生解锁"
+        ]
+      },
+      {
+        "name": "白银纪元",
+        "traffic": "144 GB / 月",
+        "price": "¥24 / 月",
+        "discounted_price": "8折券后 ¥19.20 /月",
+        "features": [
+          "每 GB 约 ¥0.13",
+          "全 IEPL 专线不限速",
+          "不限设备",
+          "支持月付"
+        ]
+      },
+      {
+        "name": "黄金时代 (高清影音主力)",
+        "traffic": "260 GB / 月",
+        "price": "¥39 / 月",
+        "discounted_price": "8折券后 ¥31.20 /月",
+        "features": [
+          "每 GB 约 ¥0.12",
+          "晚高峰 4K/8K 极速秒开",
+          "支持 Netflix/Disney+ 原生库",
+          "不限设备"
+        ]
+      },
+      {
+        "name": "铂金荣耀",
+        "traffic": "450 GB / 月",
+        "price": "¥59 / 月",
+        "discounted_price": "8折券后 ¥47.20 /月",
+        "features": [
+          "适合家庭多设备或高频下载",
+          "IEPL 内网专线高优先级调度",
+          "全节点 1x 倍率"
+        ]
+      },
+      {
+        "name": "钻石先锋",
+        "traffic": "800 GB / 月",
+        "price": "¥99 / 月",
+        "discounted_price": "8折券后 ¥79.20 /月",
+        "features": [
+          "海量流量高并发",
+          "支持团队共用",
+          "海外技术团队专属维护"
+        ]
+      },
+      {
+        "name": "星空永恒 (旗舰顶配)",
+        "traffic": "1800 GB (1.8TB) / 月",
+        "price": "¥189 / 月",
+        "discounted_price": "8折券后 ¥151.20 /月",
+        "features": [
+          "顶级月度流量池",
+          "峰值大带宽通道保障",
+          "全节点原生 IP 矩阵"
+        ]
+      },
+      {
+        "name": "微光随行 (一次性不限时)",
+        "traffic": "40 GB (永久有效，用完即止)",
+        "price": "¥19 / 次",
+        "discounted_price": "8折券后 ¥15.20",
+        "features": [
+          "无到期时间限制",
+          "全 IEPL 专线",
+          "不限设备数",
+          "轻度备用防失联"
+        ]
+      },
+      {
+        "name": "极光探险 (一次性不限时)",
+        "traffic": "120 GB (永久有效，用完即止)",
+        "price": "¥49 / 次",
+        "discounted_price": "8折券后 ¥39.20",
+        "features": [
+          "无月度清零压力",
+          "与周期套餐相同专线品质",
+          "长周期出差备用"
+        ]
+      },
+      {
+        "name": "银河漫游 (一次性不限时)",
+        "traffic": "300 GB (永久有效，用完即止)",
+        "price": "¥99 / 次",
+        "discounted_price": "8折券后 ¥79.20",
+        "features": [
+          "300GB 长期有效不过期",
+          "折算单价极优",
+          "跨境差旅常备"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "brand_name": "暮光网络 (Twilight Network / MuGuang)",
+    "slug": "brand-muguang.html",
+    "logo_url": "https://jichangbang.top/assets/feimaoyun-logo-hd.png",
+    "line_type": "全 IPLC 物理专线 / BGP 三网优化",
+    "rating": "9.6 / 10 卓越 (天梯榜综合 NO.2)",
+    "tagline": "展示年付轻量版、基础至至尊四档周期方案与不限时标准包，单节点峰值 2.5Gbps。",
+    "core_features": [
+      "全 IPLC 物理专线出口，单节点峰值 2.5Gbps",
+      "晚高峰 1.2% 优异丢包率",
+      "不限同时在线设备数量",
+      "自研客户端「暮光加速」，iOS Nextin 识别码: mgjs",
+      "Netflix / Disney+ / TikTok / ChatGPT 全解锁"
+    ],
+    "coupon_code": "客户端识别码: mgjs (Nextin直连)",
+    "starting_price": {
+      "yearly_starting": "¥109/年 (折合 ¥9.08/月)",
+      "monthly_starting": "¥20/月 (120GB/月)"
+    },
+    "official_url": "https://varnexa.twilightaff.com/#/?code=3qqonTlH",
+    "packages": [
+      {
+        "name": "暮光·年付轻量版",
+        "traffic": "70 GB / 每30天刷新",
+        "price": "¥109 / 年",
+        "discounted_price": "折合约 ¥9.08/月",
+        "features": [
+          "全 IPLC 物理专线出口",
+          "单节点峰值 2.5Gbps",
+          "不限设备数",
+          "全解锁支持"
+        ]
+      },
+      {
+        "name": "月付入门",
+        "traffic": "120 GB / 每月额度",
+        "price": "¥20 / 月",
+        "discounted_price": "¥20/月",
+        "features": [
+          "BGP 多线路调度与专线出口",
+          "支持多设备同时连接",
+          "ChatGPT/流媒体原生解锁"
+        ]
+      },
+      {
+        "name": "暮光·标准版 (站长力荐)",
+        "traffic": "240 GB / 每月额度",
+        "price": "¥40 / 月",
+        "discounted_price": "¥40/月",
+        "features": [
+          "BGP 三网优化 + IPLC 专线出口",
+          "流媒体 4K 超清秒开",
+          "不限客户端在线数"
+        ]
+      },
+      {
+        "name": "暮光·旗舰版",
+        "traffic": "700 GB / 每月额度",
+        "price": "¥100 / 月",
+        "discounted_price": "¥100/月",
+        "features": [
+          "高速 IPLC 专线极低抖动",
+          "适合多人/多设备高负载",
+          "峰值速率 2.5Gbps"
+        ]
+      },
+      {
+        "name": "暮光·至尊版 (极客尊享)",
+        "traffic": "1500 GB (1.5TB) / 每月",
+        "price": "¥180 / 月",
+        "discounted_price": "¥180/月",
+        "features": [
+          "智能专属路由专线通道",
+          "超大 1.5TB 流量",
+          "多端并发不降速",
+          "全天候海外运维"
+        ]
+      },
+      {
+        "name": "暮光·不限时标准包",
+        "traffic": "400 GB · 永久有效",
+        "price": "¥318 / 一次性",
+        "discounted_price": "¥318 一次性买断",
+        "features": [
+          "全 IPLC 专线权限",
+          "永久有效不过期",
+          "全节点 1x 计费不限速",
+          "不限设备数"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "brand_name": "微风网络 (BreezeNet)",
+    "slug": "brand-breezenet.html",
+    "logo_url": "https://jichangbang.top/assets/breezenet-logo-hd.png",
+    "line_type": "全 IPLC 物理专线",
+    "rating": "9.5 / 10 优秀 (天梯榜综合 NO.3 · 极致性价比大流量)",
+    "tagline": "以“风”为主题命名，乘风月付梯度、清风年付与一次性不限时包清晰区分呈现。",
+    "core_features": [
+      "全 IPLC 物理专线通道，高峰不限速",
+      "晚高峰 1.8% 优异丢包表现",
+      "4K/8K 视频秒开，原生纯净 IP 解锁",
+      "不限制设备同时在线数量",
+      "全场 9 折通用优惠券"
+    ],
+    "coupon_code": "weifeng90 (全场 9 折优惠券)",
+    "starting_price": {
+      "yearly_starting": "¥123.30/年 (原价 ¥137/年，9折后折合 ¥10.28/月)",
+      "monthly_starting": "¥25/月 (200GB/月)"
+    },
+    "official_url": "https://edp01.breezenetaff.com/#/?code=4KDOroY0",
+    "packages": [
+      {
+        "name": "清风 · 年付精算 (本站力荐)",
+        "traffic": "100 GB / 每月额度",
+        "price": "¥137 / 年",
+        "discounted_price": "9折券后实付 ¥123.30 /年（约 ¥10.28/月）",
+        "features": [
+          "全 IPLC 物理专线",
+          "每月 100GB 专线流量",
+          "不限设备数",
+          "4K与ChatGPT秒开"
+        ]
+      },
+      {
+        "name": "月付热门",
+        "traffic": "200 GB / 每月额度",
+        "price": "¥25 / 月",
+        "discounted_price": "¥25/月",
+        "features": [
+          "IPLC 物理专线高峰不限速",
+          "原生纯净 IP 节点",
+          "全平台客户端一键登录"
+        ]
+      },
+      {
+        "name": "破风 · 高频进阶",
+        "traffic": "500 GB / 每月额度",
+        "price": "¥55 / 月",
+        "discounted_price": "¥55/月",
+        "features": [
+          "充裕 500GB 月度大流量",
+          "支持多设备协同并发",
+          "原生 IP 流媒体解锁"
+        ]
+      },
+      {
+        "name": "海量吞吐",
+        "traffic": "1200 GB (1.2TB) / 每月",
+        "price": "¥125 / 月",
+        "discounted_price": "¥125/月",
+        "features": [
+          "超大 1.2TB 月度流量",
+          "企业级 IPLC 专线大带宽",
+          "多端高负载不降速"
+        ]
+      },
+      {
+        "name": "信风 · 一次性不限时包",
+        "traffic": "270 GB · 永久有效",
+        "price": "¥200 / 一次性",
+        "discounted_price": "¥200 一次性买断",
+        "features": [
+          "全专线节点高速访问",
+          "用完为止永不过期",
+          "全节点 1x 倍率真实计费"
+        ]
+      },
+      {
+        "name": "长风 · 一次性海量包",
+        "traffic": "570 GB · 永久有效",
+        "price": "¥370 / 一次性",
+        "discounted_price": "¥370 一次性买断",
+        "features": [
+          "570GB 永久有效总流量",
+          "多设备跨平台无缝连接",
+          "晚高峰稳定低抖动"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "brand_name": "飞猫云 (Feimaoyun)",
+    "slug": "brand-feimaoyun.html",
+    "logo_url": "https://jichangbang.top/assets/feimaoyun-logo-hd.png",
+    "line_type": "IPLC 高速物理专线 / 原生双 ISP",
+    "rating": "9.4 / 10 优秀 (综合 NO.4 · 原生IP双ISP专线)",
+    "tagline": "以学生版为入门档，向上设置星耀至穹宇系列周期套餐，并展示轻量不限时备用包。",
+    "core_features": [
+      "原生 IP 双 ISP 机房纯净出口，抗封锁强",
+      "IPLC 高速物理专线，覆盖 15+ 全球地区节点",
+      "学生版低门槛仅 ¥7.00/月",
+      "自研客户端 + Nextin 识别码快速接入",
+      "不限制同时在线设备数量"
+    ],
+    "coupon_code": "flycat888 (9 折优惠码)",
+    "starting_price": {
+      "yearly_starting": "¥84/年 (年付折合仅 ¥7.00/月)",
+      "monthly_starting": "¥25/月 (150GB/月)"
+    },
+    "official_url": "https://flycat1.flycatvipaff.cc/#/?code=Os3T3OxW",
+    "packages": [
+      {
+        "name": "飞猫·学生版 (超低门槛)",
+        "traffic": "50 GB / 每月额度",
+        "price": "¥84 / 年",
+        "discounted_price": "折合仅 ¥7.00 /月",
+        "features": [
+          "IPLC 高速专线",
+          "每月 50GB 自动刷新",
+          "不限设备数",
+          "原生纯净 IP 解锁 AI/流媒体"
+        ]
+      },
+      {
+        "name": "月付热门",
+        "traffic": "150 GB / 每月额度",
+        "price": "¥25 / 月",
+        "discounted_price": "¥25/月",
+        "features": [
+          "IPLC 专线与原生纯净 IP",
+          "每月刷新 150GB",
+          "ChatGPT/流媒体秒开"
+        ]
+      },
+      {
+        "name": "影音主推",
+        "traffic": "300 GB / 每月额度",
+        "price": "¥45 / 月",
+        "discounted_price": "¥45/月",
+        "features": [
+          "每月充裕 300GB",
+          "15+ 地区任选",
+          "4K 超清流畅播放",
+          "自研客户端一键登录"
+        ]
+      },
+      {
+        "name": "飞猫·银河版",
+        "traffic": "600 GB / 每月额度",
+        "price": "¥85 / 月",
+        "discounted_price": "¥85/月",
+        "features": [
+          "超大 600GB 专线流量",
+          "双 ISP 机房纯净原生出口",
+          "工单技术支持"
+        ]
+      },
+      {
+        "name": "极客尊享",
+        "traffic": "1200 GB (1.2TB) / 每月",
+        "price": "¥160 / 月",
+        "discounted_price": "¥160/月",
+        "features": [
+          "海量 1.2TB 专线带宽",
+          "低抖动网络拓扑路由优化",
+          "全节点 1x 倍率"
+        ]
+      },
+      {
+        "name": "飞猫·不限时轻量包",
+        "traffic": "200 GB · 永久有效",
+        "price": "¥188 / 一次性",
+        "discounted_price": "¥188 一次性买断",
+        "features": [
+          "全 IPLC 专线节点高速访问",
+          "永久有效不过期",
+          "不限设备数随时可用"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "brand_name": "灵动云 (Lingdongyun)",
+    "slug": "brand-lingdongyun.html",
+    "logo_url": "https://jichangbang.top/assets/lingdongyun-logo-hd.png",
+    "line_type": "BGP 智能多网专线 / 穿云 IPLC 专线",
+    "rating": "9.3 / 10 良好 (综合 NO.5 · BGP多网/IPLC平价之选)",
+    "tagline": "穿云年度方案、拂风至凌霄周期产品线搭配不限时轻享包，单节点峰值高达 2.5Gbps。",
+    "core_features": [
+      "BGP 智能多网专线 + 穿云物理 IPLC 专线通道",
+      "单节点峰值高达 2.5Gbps，全节点 1.0x 计费不虚标",
+      "全场 8 折专属优惠码 wsj888",
+      "不限设备同时连接，SS 协议高兼容性",
+      "iOS Nextin 客户端识别码: ldy"
+    ],
+    "coupon_code": "wsj888 (全场 8 折优惠券); iOS客户端识别码: ldy",
+    "starting_price": {
+      "yearly_starting": "¥99/年 (折合约 ¥8.25/月)",
+      "monthly_starting": "¥16.00/月 (原价 ¥20/月，8折后)"
+    },
+    "official_url": "https://varnexa.lingdongaff.com/#/?code=QcRK6OPG",
+    "packages": [
+      {
+        "name": "灵动·穿云 (年度精选IPLC)",
+        "traffic": "70 GB / 每30天额度",
+        "price": "¥99 / 年",
+        "discounted_price": "折合约 ¥8.25 /月 · 专线年度爆款",
+        "features": [
+          "物理 IPLC 专线通道",
+          "峰值高达 2.5Gbps",
+          "每 30 天自动刷新 70GB",
+          "流媒体与 ChatGPT 原生解锁"
+        ]
+      },
+      {
+        "name": "灵动·拂风 (亲民入门)",
+        "traffic": "100 GB / 每月额度",
+        "price": "¥20 / 月",
+        "discounted_price": "8折券后仅 ¥16.00 /月",
+        "features": [
+          "BGP 多网专线调度接入",
+          "全节点 1.0x 真实倍率",
+          "多设备在线无限制",
+          "主流社交与流媒体解锁"
+        ]
+      },
+      {
+        "name": "灵动·驭浪 (主力推荐)",
+        "traffic": "300 GB / 每月额度",
+        "price": "¥50 / 月",
+        "discounted_price": "8折券后仅 ¥40.00 /月",
+        "features": [
+          "BGP 三网优化 + 原生纯净 IP",
+          "支持 4K 超高清流畅秒开",
+          "AI 对话工具专属纯净线路"
+        ]
+      },
+      {
+        "name": "灵动·破晓",
+        "traffic": "700 GB / 每月额度",
+        "price": "¥100 / 月",
+        "discounted_price": "8折券后仅 ¥80.00 /月",
+        "features": [
+          "BGP 多线专线高速通道",
+          "全节点 1.0x 计费不虚标",
+          "多设备共享大流量池",
+          "低抖动链路保障"
+        ]
+      },
+      {
+        "name": "灵动·凌霄 (1.5TB)",
+        "traffic": "1500 GB (1.5TB) / 每月",
+        "price": "¥180 / 月",
+        "discounted_price": "8折券后仅 ¥144.00 /月",
+        "features": [
+          "海量 1.5TB 每月流量",
+          "BGP 智能专线流量不放大",
+          "多端并发无压力连接"
+        ]
+      },
+      {
+        "name": "灵动·不限时轻享包",
+        "traffic": "200 GB · 永久有效",
+        "price": "¥168 / 一次性",
+        "discounted_price": "8折券后仅 ¥134.40",
+        "features": [
+          "BGP 专线节点高速访问",
+          "不限使用期限用完为止",
+          "实打实 1.0x 扣减计费"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "brand_name": "飞V (FlyV)",
+    "slug": "brand-feiv.html",
+    "logo_url": "https://jichangbang.top/assets/feiv-logo.png",
+    "line_type": "BGP 优质高速入口 / IEPL / IPLC 专线",
+    "rating": "9.1 / 10 良好 (综合 NO.6 · 专线大带宽)",
+    "tagline": "提供轻量年付、四档会员周期方案、单次买断流量包及原生IP独享专线，公私业务分别列示。",
+    "core_features": [
+      "千兆 BGP 多线融合调度 + IEPL/IPLC 跨境专线",
+      "全节点统一 1.0x 计费倍率，全程不限速",
+      "不限制在线设备数量",
+      "提供独享原生公网 IP 黄金专线定制（防封控）",
+      "iOS Nextin 客户端识别码: ldy"
+    ],
+    "coupon_code": "客户端识别码: ldy; 专属通道券: feiv",
+    "starting_price": {
+      "yearly_starting": "¥99.00/年 (折合 ¥8.25/月)",
+      "monthly_starting": "¥25.00/月 (150GB/月)"
+    },
+    "official_url": "https://varnexa.flyvaff.com/#/?code=IC0p64fi",
+    "packages": [
+      {
+        "name": "FlyV 会员 - 年付标准轻量版",
+        "traffic": "65 GB / 每月额度",
+        "price": "¥99.00 / 年",
+        "discounted_price": "折合 ¥8.25/月",
+        "features": [
+          "全节点不限速，统一 1.0x 倍率",
+          "不限制在线设备数",
+          "适合轻度网络备份"
+        ]
+      },
+      {
+        "name": "精选方案 · 入门",
+        "traffic": "150 GB / 每月额度",
+        "price": "¥25.00 / 月",
+        "discounted_price": "¥25.00/月",
+        "features": [
+          "适配 YouTube/Netflix/TikTok",
+          "适配 ChatGPT、GitHub Copilot"
+        ]
+      },
+      {
+        "name": "FlyV 会员 - 进阶方案",
+        "traffic": "380 GB / 每月额度",
+        "price": "¥50.00 / 月",
+        "discounted_price": "¥50.00/月",
+        "features": [
+          "BGP 智能调度 + IEPL/IPLC 专线",
+          "4K/8K 超清流媒体秒开",
+          "深度兼容 Midjourney/Claude"
+        ]
+      },
+      {
+        "name": "高端商务 · 800GB",
+        "traffic": "800 GB / 每月额度",
+        "price": "¥110.00 / 月",
+        "discounted_price": "¥110.00/月",
+        "features": [
+          "千兆 BGP 多线融合调度",
+          "全节点 1.0x 计费",
+          "商务办公与家庭多设备打造"
+        ]
+      },
+      {
+        "name": "FlyV 会员 - 商业方案",
+        "traffic": "1800 GB (1.8TB) / 每月",
+        "price": "¥190.00 / 月",
+        "discounted_price": "¥190.00/月",
+        "features": [
+          "冗余专线出口架构",
+          "专为跨境企业/多人工作室/AI研发设计"
+        ]
+      },
+      {
+        "name": "单次轻量版 · 小流量包",
+        "traffic": "130 GB (永久有效买断)",
+        "price": "¥189.00 / 一次性",
+        "discounted_price": "¥189.00 买断",
+        "features": [
+          "永久有效无使用期限",
+          "一次购买用完即止",
+          "低频备用首选"
+        ]
+      },
+      {
+        "name": "单次轻量版 · 标准流量包",
+        "traffic": "380 GB (永久有效买断)",
+        "price": "¥479.00 / 一次性",
+        "discounted_price": "¥479.00 买断",
+        "features": [
+          "无月租清零压力",
+          "多地区节点自由切换",
+          "商旅出差首选"
+        ]
+      },
+      {
+        "name": "单次轻量版 · 精英流量包",
+        "traffic": "600 GB (永久有效买断)",
+        "price": "¥799.00 / 一次性",
+        "discounted_price": "¥799.00 买断",
+        "features": [
+          "高优先级带宽通道",
+          "全节点不限速",
+          "大容量储备"
+        ]
+      },
+      {
+        "name": "FlyV 会员 - 原生IP·独享黄金专线",
+        "traffic": "500 GB / 每月独享流量",
+        "price": "¥680.00 / 月",
+        "discounted_price": "¥680.00/月",
+        "features": [
+          "独立原生公网 IP 杜绝污染",
+          "独享专属带宽保障",
+          "TikTok 海外直播与跨境电商首选"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "brand_name": "梯子云 (LadderCloud)",
+    "slug": "brand-laddercloud.html",
+    "logo_url": "https://jichangbang.top/assets/laddercloud-logo.png",
+    "line_type": "BGP 三网智能优化 + 核心骨干 IEPL 专线",
+    "rating": "9.0 / 10 良好 (综合 NO.7 · 海量节点)",
+    "tagline": "以天梯随行年付搭配初阶至顶阶周期订阅，单列三档不限时买断包与云端独享定制专线。",
+    "core_features": [
+      "核心骨干网 IEPL 专线集群 + SLA 连通性保障",
+      "全网统一 1.0x 真实计费倍率，无恶性翻倍",
+      "不限制同时在线设备数量",
+      "支持 4K/8K 视频秒开及商业级 AI 平台深度适配",
+      "iOS Nextin 识别码: ldy"
+    ],
+    "coupon_code": "客户端识别码: ldy; 专属通道: ladder",
+    "starting_price": {
+      "yearly_starting": "¥89.00/年 (折合 ¥7.42/月)",
+      "monthly_starting": "¥25.00/月 (125GB/月)"
+    },
+    "official_url": "https://varnexa.ladderaff.com/#/?code=KSmLLEnR",
+    "packages": [
+      {
+        "name": "天梯随行 · 年度保活方案",
+        "traffic": "60 GB / 每月自动刷新",
+        "price": "¥89.00 / 年",
+        "discounted_price": "折合 ¥7.42/月",
+        "features": [
+          "年度高性价比保活",
+          "全节点不限速 1.0x",
+          "不限设备数"
+        ]
+      },
+      {
+        "name": "精选方案 · 初阶入门",
+        "traffic": "125 GB / 每月额度",
+        "price": "¥25.00 / 月",
+        "discounted_price": "¥25.00/月",
+        "features": [
+          "多入口智能调度全程不限速",
+          "完整解锁 Netflix/YouTube/ChatGPT"
+        ]
+      },
+      {
+        "name": "中阶加速 · 极清多线",
+        "traffic": "350 GB / 每月额度",
+        "price": "¥60.00 / 月",
+        "discounted_price": "¥60.00/月",
+        "features": [
+          "BGP 三网优化 + 高速专线出口",
+          "4K/8K 视频秒开",
+          "适配 ChatGPT 语音模式"
+        ]
+      },
+      {
+        "name": "旗舰级 · 750GB",
+        "traffic": "750 GB / 每月额度",
+        "price": "¥110.00 / 月",
+        "discounted_price": "¥110.00/月",
+        "features": [
+          "核心骨干网 IEPL 专线",
+          "原生 IP 解锁不降画质",
+          "跨境电商与外贸首选"
+        ]
+      },
+      {
+        "name": "商业级 · 1.6TB",
+        "traffic": "1600 GB (1.6TB) / 每月",
+        "price": "¥190.00 / 月",
+        "discounted_price": "¥190.00/月",
+        "features": [
+          "企业级专线集群 + SLA 连通保障",
+          "专属多活容灾方案最高优先级调度"
+        ]
+      },
+      {
+        "name": "云端买断 · 永不限时轻量包",
+        "traffic": "120 GB (永久有效)",
+        "price": "¥169.00 / 一次性",
+        "discounted_price": "¥169.00 买断",
+        "features": [
+          "用完即止永不限时",
+          "谷歌检索与跨境业务守号防失联备用"
+        ]
+      },
+      {
+        "name": "云端买断 · 永不限时标准包",
+        "traffic": "350 GB (永久有效)",
+        "price": "¥449.00 / 一次性",
+        "discounted_price": "¥449.00 买断",
+        "features": [
+          "中长期免续费方案",
+          "高频 AI 交互与学术研究备用"
+        ]
+      },
+      {
+        "name": "云端买断 · 永不限时精英包",
+        "traffic": "700 GB (永久有效)",
+        "price": "¥849.00 / 一次性",
+        "discounted_price": "¥849.00 买断",
+        "features": [
+          "多终端大容量终极方案",
+          "高优先级调度骨干网络"
+        ]
+      },
+      {
+        "name": "云端独享 · 私人定制专线",
+        "traffic": "500 GB / 每月独享流量",
+        "price": "¥680.00 / 月",
+        "discounted_price": "¥680.00/月",
+        "features": [
+          "独立纯净公网 IP",
+          "彻底杜绝 IP 污染与连带封号",
+          "一对一专家维护"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "brand_name": "浪网 (WaveNet)",
+    "slug": "brand-wavenet.html",
+    "logo_url": "https://jichangbang.top/assets/wavenet-logo.png?v=20261031",
+    "line_type": "全 IPLC 物理专线 / BGP 多线融合调度",
+    "rating": "8.9 / 10 良好 (综合 NO.8 · 多协议支持)",
+    "tagline": "采用直观用量层级，年付标准搭配入门至商业周期方案、三档一次性流量包与定制线路。",
+    "core_features": [
+      "全 IPLC 物理专线低延迟，单节点最高 2.5Gbps",
+      "全节点统一 1.0x 倍率真实计费，不设峰值限速",
+      "不限制同时在线设备数量",
+      "提供独立 IP 买断包与独享私人专线",
+      "iOS Nextin 识别码: ldy"
+    ],
+    "coupon_code": "客户端识别码: ldy; 专属通道: wavenet",
+    "starting_price": {
+      "yearly_starting": "¥119.00/年 (折合 ¥9.92/月)",
+      "monthly_starting": "¥30.00/月 (150GB/月)"
+    },
+    "official_url": "https://varnexa.wavenetaff.com/#/?code=j468t9eF",
+    "packages": [
+      {
+        "name": "浪网 年付标准",
+        "traffic": "80 GB / 每30天刷新",
+        "price": "¥119.00 / 年",
+        "discounted_price": "折合约 ¥9.92/月",
+        "features": [
+          "全 IPLC 专线低延迟",
+          "单节点峰值最高 2.5Gbps",
+          "不限设备数",
+          "原生 IP 解锁"
+        ]
+      },
+      {
+        "name": "入门精选 · 150GB",
+        "traffic": "150 GB / 每月额度",
+        "price": "¥30.00 / 月",
+        "discounted_price": "¥30.00/月",
+        "features": [
+          "BGP 智能调度 + 专线级出口",
+          "全节点 1x 计费",
+          "4K即点即播支持8K"
+        ]
+      },
+      {
+        "name": "浪网 进阶",
+        "traffic": "400 GB / 每月额度",
+        "price": "¥70.00 / 月",
+        "discounted_price": "¥70.00/月",
+        "features": [
+          "BGP 三网优化 + 纯专线出口",
+          "AI 生产力平台深度支持",
+          "全平台一键配置"
+        ]
+      },
+      {
+        "name": "高频首选 · 800GB",
+        "traffic": "800 GB / 每月额度",
+        "price": "¥120.00 / 月",
+        "discounted_price": "¥120.00/月",
+        "features": [
+          "多线融合专线网络出口",
+          "带宽充足不设限速",
+          "团队与家庭多端共享"
+        ]
+      },
+      {
+        "name": "商业级 · 2.0TB",
+        "traffic": "2000 GB (2.0TB) / 每月",
+        "price": "¥200.00 / 月",
+        "discounted_price": "¥200.00/月",
+        "features": [
+          "企业级 BGP + 专线出口",
+          "实打实 1.0x 真实计费",
+          "高抗封锁支持多工位并发"
+        ]
+      },
+      {
+        "name": "浪网 小流量包 (独立IP)",
+        "traffic": "180 GB (永久不过期)",
+        "price": "¥239.00 / 一次性",
+        "discounted_price": "¥239.00 买断",
+        "features": [
+          "独立 IP 不共享专人维护",
+          "跨境防封号出海配置",
+          "限 1 设备核心守号"
+        ]
+      },
+      {
+        "name": "浪网 标准流量包 (商务精英)",
+        "traffic": "450 GB (永久不过期)",
+        "price": "¥569.00 / 一次性",
+        "discounted_price": "¥569.00 买断",
+        "features": [
+          "稳定抗封锁架构",
+          "适合经常出差商务用户",
+          "多地区主流节点随意切换"
+        ]
+      },
+      {
+        "name": "浪网 精英流量包 (旗舰买断)",
+        "traffic": "900 GB (永久不过期)",
+        "price": "¥1099.00 / 一次性",
+        "discounted_price": "¥1099.00 买断",
+        "features": [
+          "高净值金融与跨境核心断区",
+          "专线级多路容灾出口",
+          "终极生产力免续费"
+        ]
+      },
+      {
+        "name": "浪网 定制线路包",
+        "traffic": "500 GB / 每月独享流量",
+        "price": "¥680.00 / 月",
+        "discounted_price": "¥680.00/月",
+        "features": [
+          "独立公网 IP 专线独享",
+          "独占带宽不抢网",
+          "跨境直播大团队顶配基建"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "brand_name": "Firefly机场 (萤火虫 / Firefly Network)",
+    "slug": "brand-firefly.html",
+    "logo_url": "https://jichangbang.top/assets/firefly-logo-hd.png",
+    "line_type": "端到端纯 IPLC 物理专线",
+    "rating": "9.6 / 10 卓越 (晚高峰极速专线榜 NO.2)",
+    "tagline": "以 Lite、Plus、Blaze、Nova 四档周期套餐搭配年付版和不限时包，全节点纯 IPLC 物理专线。",
+    "core_features": [
+      "全节点纯 IPLC 物理专线，端到端专用隧道直连境外机房",
+      "覆盖香港(20)、日本(10)、新加坡(10)、美国(10)、台湾(10)等 50+ 节点",
+      "单节点最高下载实测 155.65 MB/s (1245.2 Mbps 满血千兆)",
+      "全程不限速，不限制同时在线设备数",
+      "支持人性化补量机制 (年付版用完加 ¥15 即可重置流量)"
+    ],
+    "coupon_code": "firefly (专属推荐优惠码)",
+    "starting_price": {
+      "yearly_starting": "¥96.00/年 (折合约 ¥8.00/月)",
+      "monthly_starting": "¥25.00/月 (150GB/月)"
+    },
+    "official_url": "https://vip02.fireflyaff.com/#/?code=Fes6j9rn",
+    "packages": [
+      {
+        "name": "Firefly年付版",
+        "traffic": "60 GB / 月",
+        "price": "¥96.00 / 年",
+        "discounted_price": "折合约 ¥8.00/月",
+        "features": [
+          "全节点 IPLC 物理专线",
+          "不限速不限设备",
+          "当月用完加 ¥15 重置流量"
+        ]
+      },
+      {
+        "name": "Firefly Lite (轻量入门)",
+        "traffic": "150 GB / 月",
+        "price": "¥25.00 / 月",
+        "discounted_price": "¥25.00/月",
+        "features": [
+          "适合日常网页浏览与轻度视频",
+          "IPLC 专线不限速",
+          "50+ 节点全覆盖"
+        ]
+      },
+      {
+        "name": "Firefly Plus (黄金进阶 · 销量冠军)",
+        "traffic": "300 GB / 月",
+        "price": "¥45.00 / 月",
+        "discounted_price": "¥45.00/月",
+        "features": [
+          "高清影音与商务办公主力",
+          "全流媒体与 AI 原生 IP 解锁"
+        ]
+      },
+      {
+        "name": "Firefly Blaze (极速烈焰)",
+        "traffic": "600 GB / 月",
+        "price": "¥85.00 / 月",
+        "discounted_price": "¥85.00/月",
+        "features": [
+          "适合 4K/8K 视频与多设备家庭",
+          "不限速不限设备数"
+        ]
+      },
+      {
+        "name": "Firefly Nova (新星之顶 · 旗舰海量)",
+        "traffic": "1000 GB (1.0TB) / 月",
+        "price": "¥150.00 / 月",
+        "discounted_price": "¥150.00/月",
+        "features": [
+          "团队协作与超大流量池",
+          "全节点原生 IP 矩阵"
+        ]
+      },
+      {
+        "name": "Firefly不限时",
+        "traffic": "100 GB (永久有效买断)",
+        "price": "¥100.00 / 一次性",
+        "discounted_price": "¥100.00 买断",
+        "features": [
+          "永久 100GB 不过期",
+          "用完为止",
+          "出差备用神包"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "brand_name": "灵猫 (Civet / Spirit Cat)",
+    "slug": "brand-civet.html",
+    "logo_url": "https://jichangbang.top/assets/civet-logo-hd.png",
+    "line_type": "全 IPLC 国际专线",
+    "rating": "9.5 / 10 卓越 (晚高峰极速专线榜 NO.3)",
+    "tagline": "按年付、季付、月付分别设置 Small 与 Big 规格，补充年付小包、两档不限时包和大流量定制。",
+    "core_features": [
+      "全 IPLC 专线 (港/台/新/日/美)，1000 Mbps 最大峰值带宽",
+      "单节点最高下载 156.46 MB/s (1251.7 Mbps 满血千兆)",
+      "不限制在线客户端数量，节点速率全部保持 1.0x 真实倍率",
+      "不限时套餐用完重置可享受 9 折优惠",
+      "支持企业级与跨境电商大流量定制专线"
+    ],
+    "coupon_code": "lingmao (专属优惠码)",
+    "starting_price": {
+      "yearly_starting": "¥85.00/年 (折合约 ¥7.08/月)",
+      "monthly_starting": "¥25.00/月 (150GB/月)"
+    },
+    "official_url": "https://vip02.civetaff.com/#/?code=kZlRw46w",
+    "packages": [
+      {
+        "name": "灵猫·年付小包",
+        "traffic": "45 GB / 月 (365天时长)",
+        "price": "¥85.00 / 年",
+        "discounted_price": "折合约 ¥7.08/月",
+        "features": [
+          "全 IPLC 专线",
+          "不限速不限设备",
+          "订单日自动重置流量或购加油包"
+        ]
+      },
+      {
+        "name": "灵猫·年付Small",
+        "traffic": "150 GB / 月 (365天时长)",
+        "price": "¥195.00 / 年",
+        "discounted_price": "折合约 ¥16.25/月",
+        "features": [
+          "1000 Mbps 最大带宽",
+          "原生 IP 解锁各大流媒体及 AI"
+        ]
+      },
+      {
+        "name": "灵猫·年付Big",
+        "traffic": "300 GB / 月 (365天时长)",
+        "price": "¥295.00 / 年",
+        "discounted_price": "折合约 ¥24.58/月",
+        "features": [
+          "大流量豪华畅快",
+          "全 IPLC 专线 1.0x 费率"
+        ]
+      },
+      {
+        "name": "灵猫·季付Small",
+        "traffic": "150 GB / 月 (90天时长)",
+        "price": "¥65.00 / 季",
+        "discounted_price": "折合约 ¥21.67/月",
+        "features": [
+          "灵活周期",
+          "全 IPLC 专线",
+          "原生 IP 解锁"
+        ]
+      },
+      {
+        "name": "灵猫·季付Big",
+        "traffic": "300 GB / 月 (90天时长)",
+        "price": "¥125.00 / 季",
+        "discounted_price": "折合约 ¥41.67/月",
+        "features": [
+          "高阶影音办公",
+          "1000 Mbps 峰值"
+        ]
+      },
+      {
+        "name": "灵猫·月付Small",
+        "traffic": "150 GB / 月 (30天时长)",
+        "price": "¥25.00 / 月",
+        "discounted_price": "¥25.00/月",
+        "features": [
+          "月付尝鲜起步轻松",
+          "全平台流媒体原生解锁"
+        ]
+      },
+      {
+        "name": "灵猫·月付Big",
+        "traffic": "300 GB / 月 (30天时长)",
+        "price": "¥45.00 / 月",
+        "discounted_price": "¥45.00/月",
+        "features": [
+          "月付大包随意畅享",
+          "4K 视频秒开"
+        ]
+      },
+      {
+        "name": "灵猫·不限时Small",
+        "traffic": "100 GB (永久有效)",
+        "price": "¥100.00 / 一次性",
+        "discounted_price": "重置享 9 折特权",
+        "features": [
+          "永久有效不过期用完为止",
+          "重置享 9 折优惠"
+        ]
+      },
+      {
+        "name": "灵猫·不限时Big",
+        "traffic": "500 GB (永久有效)",
+        "price": "¥350.00 / 一次性",
+        "discounted_price": "重置享 9 折特权",
+        "features": [
+          "超大不限时池",
+          "全专线节点权限"
+        ]
+      },
+      {
+        "name": "灵猫·大流量定制",
+        "traffic": "按需定制 (大流量/独享专线)",
+        "price": "¥999.00 / 月起",
+        "discounted_price": "定制精算",
+        "features": [
+          "海外直播/跨境电商专线",
+          "独享千兆上行带宽与原生公网静态 IP"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "brand_name": "闪跃 (FlashLeap)",
+    "slug": "brand-flashleap.html",
+    "logo_url": "https://jichangbang.top/assets/flashleap-logo-hd.png",
+    "line_type": "全 IPLC 专线网络",
+    "rating": "9.4 / 10 卓越 (晚高峰极速专线榜 NO.4)",
+    "tagline": "以轻量年付、四档周期方案与两档不限时包构建完整梯度，所有节点统一 x1 倍率。",
+    "core_features": [
+      "全 IPLC 专线晚高峰不限速，所有节点统一 x1 倍率",
+      "覆盖香港、日本、新加坡、美国、台湾等亚洲低延迟节点",
+      "原生 IP 解锁各大流媒体及 ChatGPT / Claude / TikTok",
+      "支持多设备并发高速下载"
+    ],
+    "coupon_code": "shanyue (专属优惠码)",
+    "starting_price": {
+      "yearly_starting": "¥96.00/年 (折合约 ¥8.00/月)",
+      "monthly_starting": "¥24.00/月 (150GB/月)"
+    },
+    "official_url": "https://vip02.flashleapaff.com/#/?code=FkCGEeaC",
+    "packages": [
+      {
+        "name": "闪跃年付版",
+        "traffic": "60 GB / 月",
+        "price": "¥96.00 / 年",
+        "discounted_price": "折合约 ¥8.00/月",
+        "features": [
+          "轻度日常与备用首选",
+          "统一 x1 倍率",
+          "全 IPLC 专线"
+        ]
+      },
+      {
+        "name": "闪跃年付版（高）",
+        "traffic": "120 GB / 月",
+        "price": "¥180.00 / 年",
+        "discounted_price": "折合约 ¥15.00/月",
+        "features": [
+          "中重度首选充裕不焦虑",
+          "视频办公两不误"
+        ]
+      },
+      {
+        "name": "闪动 (Flicker)",
+        "traffic": "150 GB / 月",
+        "price": "¥24.00 / 月",
+        "discounted_price": "¥24.00/月 (¥0.16/GB)",
+        "features": [
+          "月付随心开通",
+          "亚太高速低延迟出口"
+        ]
+      },
+      {
+        "name": "飞跃 (Leap)",
+        "traffic": "300 GB / 月",
+        "price": "¥44.00 / 月",
+        "discounted_price": "¥44.00/月 (¥0.14/GB)",
+        "features": [
+          "4K/8K 视频拖动无缓冲",
+          "秒开 ChatGPT/Claude"
+        ]
+      },
+      {
+        "name": "瞬移 (Teleport)",
+        "traffic": "600 GB / 月",
+        "price": "¥84.00 / 月",
+        "discounted_price": "¥84.00/月 (¥0.14/GB)",
+        "features": [
+          "大流量高清追剧与大文件下载",
+          "多设备并发高速下载"
+        ]
+      },
+      {
+        "name": "旗舰海量 · 1TB 超大包",
+        "traffic": "1000 GB (1TB) / 月",
+        "price": "¥134.00 / 月",
+        "discounted_price": "每 GB 仅需 ¥0.13",
+        "features": [
+          "跨境电商、外贸团队、高吞吐科研"
+        ]
+      },
+      {
+        "name": "闪跃不限时版",
+        "traffic": "100 GB (永久有效)",
+        "price": "¥150.00 / 一次性",
+        "discounted_price": "¥150.00 买断",
+        "features": [
+          "长期有效不过期",
+          "全量优质亚太核心专线"
+        ]
+      },
+      {
+        "name": "闪跃不限时版（高）",
+        "traffic": "200 GB (永久有效)",
+        "price": "¥288.00 / 一次性",
+        "discounted_price": "¥288.00 买断",
+        "features": [
+          "无时间限制的高品质防失联",
+          "全节点统一 x1 倍率"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "brand_name": "无忧链接 (WorryFree Link)",
+    "slug": "brand-worryfree.html",
+    "logo_url": "https://jichangbang.top/assets/worryfree-logo-hd.png",
+    "line_type": "全 IPLC 专线",
+    "rating": "9.3 / 10 卓越 (晚高峰极速专线榜 NO.5)",
+    "tagline": "MINI链接年付起步、五档周期方案、两档永久不限时包及独享专业定制。",
+    "core_features": [
+      "全 IPLC 专线节点速率 ×1 (绝不虚标扣量)",
+      "年付低至 ¥79/年 (折合 ¥6.58/月)",
+      "4K/8K 流畅流媒体与 AI 专属解锁",
+      "提供独享原生 IP 专业定制"
+    ],
+    "coupon_code": "wuyou666 (专属优惠码)",
+    "starting_price": {
+      "yearly_starting": "¥79.00/年 (折合约 ¥6.58/月)",
+      "monthly_starting": "¥19.00/月 (100GB/月)"
+    },
+    "official_url": "https://wep01.worryfreeaff.com/#/?code=56A0RTpU",
+    "packages": [
+      {
+        "name": "MINI链接",
+        "traffic": "40 GB / 月",
+        "price": "¥79.00 / 年",
+        "discounted_price": "折合约 ¥6.58/月",
+        "features": [
+          "全 IPLC 专线",
+          "1x 费率",
+          "高可靠备用防失联"
+        ]
+      },
+      {
+        "name": "舒心链接",
+        "traffic": "100 GB / 月",
+        "price": "¥19.00 / 月",
+        "discounted_price": "仅 ¥0.19/GB",
+        "features": [
+          "月付无压力",
+          "晚高峰低延迟直连"
+        ]
+      },
+      {
+        "name": "省心链接",
+        "traffic": "200 GB / 月",
+        "price": "¥33.00 / 月",
+        "discounted_price": "仅 ¥0.165/GB",
+        "features": [
+          "上班族与科研学生最佳口粮",
+          "充裕不焦虑"
+        ]
+      },
+      {
+        "name": "随心链接",
+        "traffic": "500 GB / 月",
+        "price": "¥77.00 / 月",
+        "discounted_price": "仅 ¥0.154/GB",
+        "features": [
+          "4K/8K 极致流畅",
+          "多设备全天候在线"
+        ]
+      },
+      {
+        "name": "旗舰海量 · 1TB 超级大包",
+        "traffic": "1000 GB (1TB) / 月",
+        "price": "¥117.00 / 月",
+        "discounted_price": "每 GB 仅需 ¥0.117",
+        "features": [
+          "跨境电商、高并发下载首选"
+        ]
+      },
+      {
+        "name": "100G永久不限时 无忧链接",
+        "traffic": "100 GB (永久有效)",
+        "price": "¥98.00 / 一次性",
+        "discounted_price": "¥98.00 买断",
+        "features": [
+          "一次购买永久有效",
+          "出差旅游纯备用"
+        ]
+      },
+      {
+        "name": "300G永久不限时 无忧链接",
+        "traffic": "300 GB (永久有效)",
+        "price": "¥288.00 / 一次性",
+        "discounted_price": "¥288.00 买断",
+        "features": [
+          "大容量买断首选",
+          "全专线节点权限"
+        ]
+      },
+      {
+        "name": "无忧专业级定制套餐",
+        "traffic": "500 GB / 月 独享专属流量",
+        "price": "¥680.00 / 月",
+        "discounted_price": "企业级定制",
+        "features": [
+          "独享原生 IP 杜绝风控",
+          "独立带宽保障与专属部署"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "brand_name": "跨界云 (Kuajie / Crossover Cloud)",
+    "slug": "brand-kuajie.html",
+    "logo_url": "https://jichangbang.top/assets/kuajie-logo-hd.png",
+    "line_type": "IPLC 高端专线网络",
+    "rating": "9.3 / 10 卓越 (晚高峰极速专线榜 NO.6)",
+    "tagline": "跨界年付版、轻云季付、月付至巨无霸 1.8TB 团队专属，自带年付 8折/两年 7折/三年 6折。",
+    "core_features": [
+      "IPLC 高端线路，全程不限速，所有节点 1 倍率",
+      "官方自带年付 8折 / 两年 7折 / 三年 6折，优惠码可叠加",
+      "设备连接数不限制",
+      "不限时包支持 9 折手动重置流量特权"
+    ],
+    "coupon_code": "kuajie (专属优惠码)",
+    "starting_price": {
+      "yearly_starting": "¥96.00/年 (折合约 ¥8.00/月)",
+      "monthly_starting": "¥20.00/月 (120GB/月)"
+    },
+    "official_url": "https://vip02.kuajieaff.com/#/?code=VfWeYwHM",
+    "packages": [
+      {
+        "name": "跨界年付版",
+        "traffic": "60 GB / 月",
+        "price": "¥96.00 / 年",
+        "discounted_price": "全年 ¥96，折合每月 ¥8",
+        "features": [
+          "适合轻度日常与偶尔 AI 对话",
+          "所有节点 1 倍率"
+        ]
+      },
+      {
+        "name": "年付版 (100GB/月)",
+        "traffic": "100 GB / 月",
+        "price": "¥150.00 / 年",
+        "discounted_price": "折合每月 ¥12.5",
+        "features": [
+          "追剧与 AI 对话更从容",
+          "设备数不限"
+        ]
+      },
+      {
+        "name": "轻云 Lite（季付）",
+        "traffic": "120 GB / 月",
+        "price": "¥43.00 / 季",
+        "discounted_price": "季付超值 ¥43 特别优惠 (年付折合 ¥16/月)",
+        "features": [
+          "1-2 台设备主力",
+          "可叠加年付折扣"
+        ]
+      },
+      {
+        "name": "轻云 Lite (月付)",
+        "traffic": "120 GB / 月",
+        "price": "¥20.00 / 月",
+        "discounted_price": "¥20.00/月",
+        "features": [
+          "月付灵活尝试",
+          "随时可升档"
+        ]
+      },
+      {
+        "name": "跃云 Leap (全家共用爆款)",
+        "traffic": "330 GB / 月",
+        "price": "¥40.00 / 月",
+        "discounted_price": "年付折合约 ¥32/月",
+        "features": [
+          "全家共用/多设备",
+          "常下载与高清看视频"
+        ]
+      },
+      {
+        "name": "凌云 Soar (4K 重度影音)",
+        "traffic": "830 GB / 月",
+        "price": "¥90.00 / 月",
+        "discounted_price": "年付折合约 ¥72/月",
+        "features": [
+          "4K 重度观影与大量下载",
+          "多屏并发"
+        ]
+      },
+      {
+        "name": "旗舰巨无霸 · 1.8TB 团队专属",
+        "traffic": "1800 GB (1.8TB) / 月",
+        "price": "¥130.00 / 月",
+        "discounted_price": "每 GB 成本全场最低 (年付折合约 ¥104/月)",
+        "features": [
+          "大型下载、工作室与跨境电商共用"
+        ]
+      },
+      {
+        "name": "跨界·不限时包",
+        "traffic": "300 GB (永久有效)",
+        "price": "¥200.00 / 一次性",
+        "discounted_price": "重置享 9 折特权 (¥180)",
+        "features": [
+          "长期有效不自动续费",
+          "用完重置享 9 折"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "brand_name": "星岛梦 (StarDream)",
+    "slug": "brand-xingdaomeng.html",
+    "logo_url": "https://jichangbang.top/assets/xdm888-logo-hd.png",
+    "line_type": "全 IEPL / IPLC 专线",
+    "rating": "9.2 / 10 卓越 (极致平价专线推荐)",
+    "tagline": "高校套餐年付起步，涵盖 150G 至 1.0TB 周期方案，三档买断包与美国家宽定制。",
+    "core_features": [
+      "全 IPLC/IEPL 专线，最高 2.5Gbps 物理速率",
+      "全节点 x1 真实倍率，晚高峰不降速",
+      "自带年付 8折 / 两年 7折 / 三年 6折，优惠码可叠加",
+      "提供美国原生真实家庭宽带住宅 IP 定制"
+    ],
+    "coupon_code": "xdm888 (专属优惠码)",
+    "starting_price": {
+      "yearly_starting": "¥96.00/年 (折合 ¥8.00/月)",
+      "monthly_starting": "¥25.00/月 (150GB/月)"
+    },
+    "official_url": "https://vip02.xdm888aff.com/#/?code=VfWeYwHM",
+    "packages": [
+      {
+        "name": "星岛梦 · 高校套餐",
+        "traffic": "60 GB / 月",
+        "price": "¥96.00 / 年",
+        "discounted_price": "折合约 ¥8.00/月",
+        "features": [
+          "适合小流量/学生党",
+          "全 IPLC 专线",
+          "单节点峰值最高 2.5Gbps"
+        ]
+      },
+      {
+        "name": "星岛梦 · 超量150G",
+        "traffic": "150 GB / 月",
+        "price": "¥25.00 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "全 IEPL 专线",
+          "原生 IP 解锁 Netflix/ChatGPT"
+        ]
+      },
+      {
+        "name": "星岛梦 · 进阶300G",
+        "traffic": "300 GB / 月",
+        "price": "¥50.00 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "4K 影音与日常科研主力"
+        ]
+      },
+      {
+        "name": "星岛梦 · 闪光500G",
+        "traffic": "500 GB / 月",
+        "price": "¥70.00 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "大容量狂飙",
+          "多设备在线稳定"
+        ]
+      },
+      {
+        "name": "星岛梦 · 旗舰1T版",
+        "traffic": "1000 GB (1TB) / 月",
+        "price": "¥130.00 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "海量狂欢",
+          "智能路由自动择优"
+        ]
+      },
+      {
+        "name": "星岛梦 · 永久不限时100",
+        "traffic": "100 GB (永久有效)",
+        "price": "¥100.00 / 一次性",
+        "discounted_price": "重置享 9 折特权 (¥90)",
+        "features": [
+          "无限时长",
+          "全 IPLC 专线",
+          "所有节点 x1 倍率"
+        ]
+      },
+      {
+        "name": "星岛梦 · 永久不限时300",
+        "traffic": "300 GB (永久有效)",
+        "price": "¥300.00 / 一次性",
+        "discounted_price": "重置享 9 折特权 (¥270)",
+        "features": [
+          "高人气长期备用"
+        ]
+      },
+      {
+        "name": "星岛梦 · 永久不限时1TB",
+        "traffic": "1000 GB (永久有效)",
+        "price": "¥600.00 / 一次性",
+        "discounted_price": "重置享 9 折特权 (¥540)",
+        "features": [
+          "每 GB 超低单价永久储备"
+        ]
+      },
+      {
+        "name": "星岛梦 · 美国家宽定制",
+        "traffic": "500 GB / 月",
+        "price": "¥700.00 / 月",
+        "discounted_price": "¥700.00/月",
+        "features": [
+          "美国原生住宅家宽 IP",
+          "跨境电商与 TikTok 直播高风控防封",
+          "重置享 8 折"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "brand_name": "光速云 (LightSpeed)",
+    "slug": "brand-lightspeed.html",
+    "logo_url": "https://jichangbang.top/assets/gsy888-logo-hd.png",
+    "line_type": "全 IEPL / IPLC 专线",
+    "rating": "9.5 / 10 卓越 (极致平价专线推荐 NO.3)",
+    "tagline": "设置“致敬斯诺克147”经典不限时流量包、轻量年付与四档高速周期方案，以及美国家宽定制。",
+    "core_features": [
+      "全 IEPL/IPLC 专线，单节点最高 2.5Gbps 满血速率",
+      "致敬斯诺克 147 永久买断不过期流量包 (¥147/247GB)",
+      "轻量年付仅 ¥99/年 (折合 ¥8.25/月)",
+      "年付 8折 / 两年 7折 / 三年 6折，优惠码 gsy888 可叠加"
+    ],
+    "coupon_code": "gsy888 (专属优惠码)",
+    "starting_price": {
+      "yearly_starting": "¥99.00/年 (折合约 ¥8.25/月)",
+      "monthly_starting": "¥25.00/月 (极速版 168GB/月)"
+    },
+    "official_url": "https://vip02.gsy888aff.com/#/?code=VfWeYwHM",
+    "packages": [
+      {
+        "name": "致敬斯诺克147永久套餐",
+        "traffic": "247 GB (永久有效不过期)",
+        "price": "¥147.00 / 一次性",
+        "discounted_price": "¥147 一次性买断",
+        "features": [
+          "经典买断随用随停",
+          "全 IEPL/IPLC 专线",
+          "单节点峰值 2.5Gbps",
+          "原生 IP 解锁"
+        ]
+      },
+      {
+        "name": "光速云 · 轻量版",
+        "traffic": "69 GB / 月",
+        "price": "¥99.00 / 年",
+        "discounted_price": "年付折合约 ¥8.25 / 月",
+        "features": [
+          "适合小流量日常与学生党",
+          "全 IPLC 专线",
+          "晚高峰不限速"
+        ]
+      },
+      {
+        "name": "光速云 · 极速版",
+        "traffic": "168 GB / 月",
+        "price": "¥25.00 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "性价比标杆最多人选",
+          "全 IEPL 专线"
+        ]
+      },
+      {
+        "name": "光速云 · 流光版",
+        "traffic": "238 GB / 月",
+        "price": "¥34.00 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "进阶大流量",
+          "4K 流媒体畅看"
+        ]
+      },
+      {
+        "name": "光速云 · 量子版",
+        "traffic": "500 GB / 月",
+        "price": "¥68.00 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "量子尊享大容量",
+          "多屏 4K 重度影音"
+        ]
+      },
+      {
+        "name": "光速云 · 无界版",
+        "traffic": "900 GB / 月",
+        "price": "¥138.00 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "重度专属海量",
+          "顶级带宽晚高峰不降速"
+        ]
+      },
+      {
+        "name": "光速云 · 美国家宽定制",
+        "traffic": "500 GB / 月",
+        "price": "¥680.00 / 月",
+        "discounted_price": "¥680.00/月",
+        "features": [
+          "美国真实原生住宅家庭宽带",
+          "纯净静态 IP",
+          "跨境电商与直播防风控首选"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "brand_name": "唯兔云 (V2云 / Crossover)",
+    "slug": "brand-v2yun.html",
+    "logo_url": "https://jichangbang.top/assets/v2yun-logo-hd.png",
+    "line_type": "全 IPLC / IEPL 专线",
+    "rating": "9.2 / 10 卓越 (平价专线推荐)",
+    "tagline": "年付限量款折合仅 ¥6.66/月，搭配普通版至至尊版 1TB 周期套餐与三档买断包。",
+    "core_features": [
+      "全 IPLC 专线 + vless 协议，增加备用直连节点",
+      "年付限量款折合仅 ¥6.66/月",
+      "自带年付 8折 / 两年 7折 / 三年 6折",
+      "一次性不限时套餐后续续费享永久 9 折特权"
+    ],
+    "coupon_code": "v2yun (专属优惠码)",
+    "starting_price": {
+      "yearly_starting": "约 ¥80.00/年 (年付折合仅 ¥6.66/月)",
+      "monthly_starting": "¥19.90/月 (150GB/月)"
+    },
+    "official_url": "https://vip02.v2yunaff.com/#/?code=VfWeYwHM",
+    "packages": [
+      {
+        "name": "唯兔云 · 年付版限量款",
+        "traffic": "45 GB / 月",
+        "price": "约 ¥80.00 / 年",
+        "discounted_price": "年付折合仅 ¥6.66/月",
+        "features": [
+          "爆款轻量设计",
+          "看新闻/查资料/写论文",
+          "全 IPLC 专线 vless 协议"
+        ]
+      },
+      {
+        "name": "唯兔云 · 年付加强专线",
+        "traffic": "75 GB / 月",
+        "price": "约 ¥120.00 / 年",
+        "discounted_price": "年折 ¥10/月",
+        "features": [
+          "IEPL 企业跨境专线",
+          "流媒体与 AI 全解锁"
+        ]
+      },
+      {
+        "name": "唯兔云 · 普通版",
+        "traffic": "150 GB / 月",
+        "price": "¥19.90 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "热销入门 150GB 充沛",
+          "全 IPLC 专线"
+        ]
+      },
+      {
+        "name": "唯兔云 · 进阶版",
+        "traffic": "200 GB / 月",
+        "price": "¥29.90 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "进阶追剧 200GB 畅快",
+          "多设备在线"
+        ]
+      },
+      {
+        "name": "唯兔云 · 专业版",
+        "traffic": "500 GB / 月",
+        "price": "¥59.90 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "专业大容量 500GB 狂欢"
+        ]
+      },
+      {
+        "name": "唯兔云 · 至尊版",
+        "traffic": "1000 GB (1.0TB) / 月",
+        "price": "¥119.90 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "旗舰 1.0TB 海量不限速"
+        ]
+      },
+      {
+        "name": "唯兔云 · 永久不限时 (100GB)",
+        "traffic": "100 GB (永久有效)",
+        "price": "¥100.00 / 一次性",
+        "discounted_price": "后续续费永久 9 折",
+        "features": [
+          "全 IPLC 专线",
+          "用完点击重置流量享 9 折"
+        ]
+      },
+      {
+        "name": "唯兔云 · 永久不限时 (200GB)",
+        "traffic": "200 GB (永久有效)",
+        "price": "¥160.00 / 一次性",
+        "discounted_price": "后续续费永久 9 折",
+        "features": [
+          "不限时主力备用"
+        ]
+      },
+      {
+        "name": "唯兔云 · 永久不限时 (500GB)",
+        "traffic": "500 GB (永久有效)",
+        "price": "¥340.00 / 一次性",
+        "discounted_price": "后续续费永久 9 折",
+        "features": [
+          "高性价比大容量备用"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "brand_name": "U1S1 (有一说一)",
+    "slug": "brand-u1s1.html",
+    "logo_url": "https://jichangbang.top/assets/u1s1-logo-hd.png?v=20261102",
+    "line_type": "BGP 三网智能优化 + IEPL 专线出口",
+    "rating": "9.1 / 10 良好 (平价专线榜 NO.5)",
+    "tagline": "以“就是好用包”年付衔接四档周期方案与企业定制，每两个月额外扩容 +200兆带宽。",
+    "core_features": [
+      "BGP 三网智能优化 + IEPL 专线出口，晚高峰不降速",
+      "全平台 ss 协议高兼容支持，不限速不限设备数",
+      "每两个月主动额外 +200兆带宽冗余扩容",
+      "Netflix/Disney+/HBO/DAZN 及全生态 AI 原生解锁"
+    ],
+    "coupon_code": "u1s1 (专属优惠码)",
+    "starting_price": {
+      "yearly_starting": "约 ¥96.00/年 (折合仅 ¥8.00/月)",
+      "monthly_starting": "¥20.00/月 (120GB/月)"
+    },
+    "official_url": "https://pkdj7.vipaff.cc/#/?code=NMjmHbvu",
+    "packages": [
+      {
+        "name": "u1s1 · 就是好用包",
+        "traffic": "60 GB / 月",
+        "price": "约 ¥96.00 / 年",
+        "discounted_price": "折合仅 ¥8.00/月",
+        "features": [
+          "学生党查资料 AI",
+          "日常网页社交轻量视频",
+          "IEPL 专线出口"
+        ]
+      },
+      {
+        "name": "u1s1 · 普通人真够了包",
+        "traffic": "120 GB / 月",
+        "price": "¥20.00 / 月",
+        "discounted_price": "¥20.00/月 (真实 1 倍率)",
+        "features": [
+          "日常主力首选",
+          "刷视频看剧远程办公"
+        ]
+      },
+      {
+        "name": "u1s1 · 你以为用不到包",
+        "traffic": "300 GB / 月",
+        "price": "¥40.00 / 月",
+        "discounted_price": "¥40.00/月",
+        "features": [
+          "高频重度首选",
+          "4K/8K 解锁秒开",
+          "多设备并发"
+        ]
+      },
+      {
+        "name": "u1s1 · 瘾大就拉满包",
+        "traffic": "700 GB / 月",
+        "price": "¥100.00 / 月",
+        "discounted_price": "¥100.00/月",
+        "features": [
+          "700GB 海量储备",
+          "千兆跑满"
+        ]
+      },
+      {
+        "name": "u1s1 · 我全都要包",
+        "traffic": "1500 GB (1.5TB) / 月",
+        "price": "¥180.00 / 月",
+        "discounted_price": "¥180.00/月",
+        "features": [
+          "小团队运营与跨国协作",
+          "支撑海量并发"
+        ]
+      },
+      {
+        "name": "u1s1 · 定制包",
+        "traffic": "按需定制 (独享纯净 IP)",
+        "price": "¥600.00 / 月",
+        "discounted_price": "专属通道",
+        "features": [
+          "跨境电商与 TikTok 直播定制",
+          "防封控防关联"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "brand_name": "极连云 (Jilianyun)",
+    "slug": "brand-jilianyun.html",
+    "logo_url": "https://jichangbang.top/assets/jilianyun-logo-hd.png?v=20261102",
+    "line_type": "全 IPLC 物理专线",
+    "rating": "9.1 / 10 良好 (平价专线榜 NO.6)",
+    "tagline": "限时年付套餐体验、四档主力高速周期方案与 600G 不限时买断包。",
+    "core_features": [
+      "全 IPLC 专线，单节点最大提供 2.5Gbps 速率",
+      "全节点 x1 倍率，晚高峰不限速",
+      "自带年付 8折 / 两年 7折 / 三年 6折",
+      "不限时套餐买断 600GB 永久有效且重置享 9 折"
+    ],
+    "coupon_code": "jly666 (专属优惠码)",
+    "starting_price": {
+      "yearly_starting": "约 ¥96.00/年 (折合仅 ¥8.00/月)",
+      "monthly_starting": "¥18.00/月 (100GB/月)"
+    },
+    "official_url": "https://kdjhao.jlyvipaff.com/#/?code=poyoU7mq",
+    "packages": [
+      {
+        "name": "限时年付套餐体验",
+        "traffic": "60 GB / 月",
+        "price": "约 ¥96.00 / 年",
+        "discounted_price": "折合仅 ¥8.00/月",
+        "features": [
+          "全 IPLC 专线",
+          "单节点最大 2.5Gbps",
+          "原生 IP 解锁"
+        ]
+      },
+      {
+        "name": "极连云 · 基础套餐",
+        "traffic": "100 GB / 月",
+        "price": "¥18.00 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "热销入门 100GB 充沛",
+          "晚高峰不限速"
+        ]
+      },
+      {
+        "name": "极连云 · 进阶套餐",
+        "traffic": "200 GB / 月",
+        "price": "¥32.00 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "进阶追剧优化带宽调度",
+          "晚高峰流畅"
+        ]
+      },
+      {
+        "name": "极连云 · 旗舰套餐",
+        "traffic": "500 GB / 月",
+        "price": "¥61.00 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "高速旗舰 500GB 重度优选",
+          "低延迟体验"
+        ]
+      },
+      {
+        "name": "极连云 · 尊享套餐",
+        "traffic": "1000 GB (1.0TB) / 月",
+        "price": "¥122.00 / 月",
+        "discounted_price": "年付 8 折",
+        "features": [
+          "顶级尊享最高 2.5Gbps",
+          "原生 IP 全解锁"
+        ]
+      },
+      {
+        "name": "极连云 · 不限时套餐",
+        "traffic": "600 GB (永久有效)",
+        "price": "¥399.00 / 一次性",
+        "discounted_price": "重置享 9 折",
+        "features": [
+          "一次性 600G 永久不过期",
+          "无需担心每月重置"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "brand_name": "全球云 (Global Cloud)",
+    "slug": "brand-quanqiuyun.html",
+    "logo_url": "https://jichangbang.top/assets/quanqiuyun-logo-hd.png?v=20261102",
+    "line_type": "BGP 多线路智能调度 + 专线级出口架构",
+    "rating": "9.1 / 10 良好 (平价专线榜 NO.7)",
+    "tagline": "轻量年付、四档 BGP 优化周期方案、三档不限时包与独享私人专线。",
+    "core_features": [
+      "BGP 多线路智能调度 + 专线级出口架构，全程不限速",
+      "全节点流量统一 1.0x 真实计费，无放大比例",
+      "Shadowsocks 高性能协议，解除设备锁多端同时在线",
+      "提供独享私人专线与独立公网 IP"
+    ],
+    "coupon_code": "qqy888 (专属优惠码)",
+    "starting_price": {
+      "yearly_starting": "约 ¥99.00/年 (折合仅 ¥8.25/月)",
+      "monthly_starting": "¥20.00/月 (120GB/月)"
+    },
+    "official_url": "https://sswdh.gcvipaff.com/#/?code=NE1AcNIX",
+    "packages": [
+      {
+        "name": "轻量版",
+        "traffic": "59 GB / 月",
+        "price": "约 ¥99.00 / 年",
+        "discounted_price": "折合仅 ¥8.25/月",
+        "features": [
+          "全 IPLC 专线",
+          "单节点峰值最高 2.5Gbps",
+          "原生 IP 解锁"
+        ]
+      },
+      {
+        "name": "BGP 智能优化 · 入门方案",
+        "traffic": "120 GB / 月",
+        "price": "¥20.00 / 月",
+        "discounted_price": "¥20.00/月 (1.0x 真实计费)",
+        "features": [
+          "日常网页社交轻度用户",
+          "4K 即点即播支持 8K"
+        ]
+      },
+      {
+        "name": "BGP 智能优化 · 进阶方案",
+        "traffic": "300 GB / 月",
+        "price": "¥40.00 / 月",
+        "discounted_price": "¥40.00/月",
+        "features": [
+          "BGP 三网优化 + 纯专线出口",
+          "稳定优先 4K 秒开"
+        ]
+      },
+      {
+        "name": "BGP 智能优化 · 高端方案",
+        "traffic": "700 GB / 月",
+        "price": "¥100.00 / 月",
+        "discounted_price": "¥100.00/月",
+        "features": [
+          "700GB 海量储备",
+          "满足 ChatGPT/Claude 高强度使用"
+        ]
+      },
+      {
+        "name": "BGP 智能优化 · 商业方案",
+        "traffic": "1500 GB (1.5TB) / 月",
+        "price": "¥180.00 / 月",
+        "discounted_price": "¥180.00/月",
+        "features": [
+          "企业级 BGP 专线出口",
+          "支持大量设备并发"
+        ]
+      },
+      {
+        "name": "BGP 智能优化 · 不限时轻量包",
+        "traffic": "100 GB (永久有效)",
+        "price": "¥100.00 / 一次性",
+        "discounted_price": "¥100.00 买断",
+        "features": [
+          "永久不过期",
+          "长周期差旅高端备用"
+        ]
+      },
+      {
+        "name": "BGP 智能优化 · 不限时标准包",
+        "traffic": "400 GB (永久有效)",
+        "price": "¥360.00 / 一次性",
+        "discounted_price": "¥360.00 买断",
+        "features": [
+          "400GB 大容量买断",
+          "全节点 1.0x 计费"
+        ]
+      },
+      {
+        "name": "BGP 智能优化 · 不限时大容量包",
+        "traffic": "800 GB (永久有效)",
+        "price": "¥700.00 / 一次性",
+        "discounted_price": "¥700.00 买断",
+        "features": [
+          "尊享买断 800GB 海量储备"
+        ]
+      },
+      {
+        "name": "独享私人专线 · 独立公网IP",
+        "traffic": "500 GB / 月 独享流量",
+        "price": "¥680.00 / 月",
+        "discounted_price": "¥680.00/月",
+        "features": [
+          "独立带宽与独立公网 IP",
+          "TikTok 直播与跨境电商防封控"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "brand_name": "二猫云 (2mao Cloud)",
+    "slug": "brand-2mao.html",
+    "logo_url": "https://jichangbang.top/assets/2mao-logo-hd.png",
+    "line_type": "全 IEPL 物理专线",
+    "rating": "9.1 / 10 卓越 (晚高峰极速专线 · 全 IEPL 物理专线)",
+    "tagline": "白猫、橘猫、牛奶猫和黑猫区分不同月度用量，并设置年付小包、两档不限时包和美国家宽定制。",
+    "core_features": [
+      "全 IEPL 物理专线，晚高峰 0.00% 极稳丢包，下行高达 168.30 MB/s",
+      "全节点统一真实 X1 倍率，晚高峰并发不限速",
+      "不限制在线设备数量",
+      "官方自带年付 8折 / 两年付 7折 / 三年付 6折",
+      "提供独享美国原生真实住宅宽带定制"
+    ],
+    "coupon_code": "2mao888 (官方专属优惠码，可与年付折扣叠加享折上折)",
+    "starting_price": {
+      "yearly_starting": "¥96.00/年 (折合 ¥8.00/月)",
+      "monthly_starting": "¥20.00/月 (白猫套餐 120GB/月，年折 ¥16.00/月)"
+    },
+    "official_url": "https://waaa.2maoyunaff.cc/#/?code=8888",
+    "packages": [
+      {
+        "name": "二猫年付小包",
+        "traffic": "60 GB / 每月额度",
+        "price": "¥96.00 / 年",
+        "discounted_price": "折合 ¥8.00/月",
+        "features": [
+          "全 IEPL 物理专线",
+          "晚高峰超低延迟保障",
+          "个人多端登录"
+        ]
+      },
+      {
+        "name": "白猫套餐 (入门推荐)",
+        "traffic": "120 GB / 每月额度",
+        "price": "¥20.00 / 月",
+        "discounted_price": "年折 ¥16.00/月 (年付8折)",
+        "features": [
+          "单节点最高 2.5Gbps 带宽",
+          "Netflix/YouTube 4K 秒开"
+        ]
+      },
+      {
+        "name": "橘猫畅玩版 (主力畅享)",
+        "traffic": "260 GB / 每月额度",
+        "price": "¥40.00 / 月",
+        "discounted_price": "年折 ¥32.00/月 (年付8折)",
+        "features": [
+          "原生纯净 IP 解锁 ChatGPT/Claude",
+          "4K 影音发烧友主力"
+        ]
+      },
+      {
+        "name": "牛奶猫尊享版 (团队高配)",
+        "traffic": "550 GB / 每月额度",
+        "price": "¥80.00 / 月",
+        "discounted_price": "年折 ¥64.00/月 (年付8折)",
+        "features": [
+          "独立专线通道与低丢包率",
+          "企业级售后技术响应"
+        ]
+      },
+      {
+        "name": "黑猫重度用户版 (重度专属)",
+        "traffic": "850 GB / 每月额度",
+        "price": "¥160.00 / 月",
+        "discounted_price": "年折 ¥128.00/月 (年付8折)",
+        "features": [
+          "850G 高速流量",
+          "60+ 节点解锁全部流媒体与 AI"
+        ]
+      },
+      {
+        "name": "二猫云 · 不限时套餐",
+        "traffic": "100 GB (永久有效)",
+        "price": "¥100.00 / 一次性",
+        "discounted_price": "¥100.00 买断",
+        "features": [
+          "流量永久有效随用随停",
+          "无需担心每月重置",
+          "支持后续加购补充"
+        ]
+      },
+      {
+        "name": "二猫云 · 不限时套餐加大版",
+        "traffic": "220 GB (永久有效)",
+        "price": "¥199.00 / 一次性",
+        "discounted_price": "¥199.00 买断",
+        "features": [
+          "超值大容量永久储备",
+          "全线 IEPL 隧道"
+        ]
+      },
+      {
+        "name": "二猫云 · 美国家宽定制",
+        "traffic": "500 GB / 独享资源",
+        "price": "¥700.00 / 月",
+        "discounted_price": "¥700.00/月",
+        "features": [
+          "美国真实原生住宅 IP",
+          "TikTok 美区带货与跨境店铺首选"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "brand_name": "一翻云 (1fly Cloud)",
+    "slug": "brand-1fly.html",
+    "logo_url": "https://jichangbang.top/assets/1fly-logo-hd.png",
+    "line_type": "全 IEPL 尊享专线",
+    "rating": "9.1 / 10 卓越 (极致平价专线 · 全 IEPL 尊享专线)",
+    "tagline": "每月尊享 IEPL 专线，极速高带宽保障，不限制设备同时在线，全节点 x1 真实倍率。",
+    "core_features": [
+      "全 IEPL 尊享专线高速流量，单节点最高 2.5Gbps",
+      "全节点 x1 真实倍率，晚高峰并发低延迟通道",
+      "不限制设备同时在线数量",
+      "适配自研客户端，轻松一键快速连接",
+      "超值阶梯特惠：季付 / 半年付 / 年付自带大幅折扣"
+    ],
+    "coupon_code": "官方自带周期特惠折扣 (季付/半年/年付)",
+    "starting_price": {
+      "yearly_starting": "¥98.00/年 (折合 ¥8.17/月)",
+      "monthly_starting": "¥20.00/月 (150GB/月，年付仅 ¥168)"
+    },
+    "official_url": "https://wzjc.1flyunaff.cc/#/?code=FjYjB9gY",
+    "packages": [
+      {
+        "name": "主推套餐 · 年付专属",
+        "traffic": "60 GB / 月",
+        "price": "¥98.00 / 年",
+        "discounted_price": "折合 ¥8.17/月",
+        "features": [
+          "轻度需求首选",
+          "全 IEPL 专线不限速",
+          "覆盖 60+ 优质全球节点"
+        ]
+      },
+      {
+        "name": "精选方案",
+        "traffic": "150 GB / 月",
+        "price": "¥20.00 / 月",
+        "discounted_price": "季付 ¥55 | 半年付 ¥98 | 年付 ¥168",
+        "features": [
+          "极速高带宽保障",
+          "解锁主流流媒体及各类 AI 工具"
+        ]
+      },
+      {
+        "name": "舒享版",
+        "traffic": "350 GB / 月",
+        "price": "¥35.00 / 月",
+        "discounted_price": "季付 ¥98 | 半年付 ¥178 | 年付 ¥298",
+        "features": [
+          "独享高速通道保障",
+          "多设备协同"
+        ]
+      },
+      {
+        "name": "进阶之选",
+        "traffic": "600 GB / 月",
+        "price": "¥55.00 / 月",
+        "discounted_price": "季付 ¥150 | 半年付 ¥280 | 年付 ¥498",
+        "features": [
+          "4K/8K 超高清流媒体无缓冲播放",
+          "全线晚高峰极致低延迟"
+        ]
+      },
+      {
+        "name": "团队极客",
+        "traffic": "1200 GB (1.2TB) / 月",
+        "price": "¥95.00 / 月",
+        "discounted_price": "季付 ¥260 | 半年付 ¥490 | 年付 ¥888",
+        "features": [
+          "单节点最高 2.5Gbps 带宽",
+          "工作室团队与重度下载首选"
+        ]
+      },
+      {
+        "name": "永久不过期 (150G)",
+        "traffic": "150 GB (永久有效)",
+        "price": "¥100.00 / 一次性",
+        "discounted_price": "¥100.00 买断",
+        "features": [
+          "不设到期时间随用随停",
+          "支持随时补充流量包"
+        ]
+      },
+      {
+        "name": "永久不过期 (350G)",
+        "traffic": "350 GB (永久有效)",
+        "price": "¥200.00 / 一次性",
+        "discounted_price": "¥200.00 买断",
+        "features": [
+          "无月租压力永不清零",
+          "全节点 x1 真实倍率"
+        ]
+      },
+      {
+        "name": "永久不过期 · 海量储备 (800G)",
+        "traffic": "800 GB (永久有效)",
+        "price": "¥400.00 / 一次性",
+        "discounted_price": "¥400.00 买断",
+        "features": [
+          "800GB 永久海量储备",
+          "一次购买长久无忧"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "brand_name": "边缘节点 (EdgeNova)",
+    "slug": "brand-edgenova.html",
+    "logo_url": "https://jichangbang.top/assets/edgenova-logo-hd.png",
+    "line_type": "全 IPLC 国际专线",
+    "rating": "9.1 / 10 卓越 (极致平价专线 · 全 IPLC 国际专线)",
+    "tagline": "全 IPLC 专线网络，提供最高 2.5Gbps 稳定速率，智能流量分配与路由优化。",
+    "core_features": [
+      "全 IPLC 专线网络，最高 2.5Gbps 稳定速率",
+      "本站 8 折专属优惠券: xk808",
+      "原生 IP 线路，轻松解锁 Netflix/Disney+/ChatGPT",
+      "年费小包仅 10 元随时可重置流量",
+      "不限制在线设备连接数量"
+    ],
+    "coupon_code": "xk808 (立享 8 折优惠券)",
+    "starting_price": {
+      "yearly_starting": "¥98.00/年 (8折券后约 ¥78.40/年，折合仅 ¥6.53/月)",
+      "monthly_starting": "¥15.00/月 (轻度尝鲜 60GB/月); 极界标准 ¥17.60/月 (8折后)"
+    },
+    "official_url": "https://work.edgenovaaff.cc/#/?code=edgenova",
+    "packages": [
+      {
+        "name": "极界·标准套餐",
+        "traffic": "120 GB / 月",
+        "price": "¥22.00 / 月",
+        "discounted_price": "8折券后 ¥17.60/月",
+        "features": [
+          "全 IPLC 专线最高 2.5Gbps",
+          "原生 IP 解锁 Netflix/ChatGPT",
+          "不限设备数"
+        ]
+      },
+      {
+        "name": "精选方案 · 年付小包",
+        "traffic": "45 GB / 月",
+        "price": "¥98.00 / 年",
+        "discounted_price": "8折券后实付 ¥78.40/年 (折合 ¥6.53/月)",
+        "features": [
+          "年费小包",
+          "10 元随时可重置流量",
+          "原生 IP 线路"
+        ]
+      },
+      {
+        "name": "轻度尝鲜",
+        "traffic": "60 GB / 月",
+        "price": "¥15.00 / 月",
+        "discounted_price": "体验套餐 ¥15.00/月",
+        "features": [
+          "IPLC 专线通道",
+          "原生纯净 IP",
+          "不限同时在线设备"
+        ]
+      },
+      {
+        "name": "进阶优选",
+        "traffic": "200 GB / 月",
+        "price": "¥35.00 / 月",
+        "discounted_price": "8折券后 ¥28.00/月",
+        "features": [
+          "单节点最高 2.5Gbps",
+          "原生 IP 深度解锁 AI 工具"
+        ]
+      },
+      {
+        "name": "团队高配",
+        "traffic": "320 GB / 月",
+        "price": "¥50.00 / 月",
+        "discounted_price": "8折券后 ¥40.00/月",
+        "features": [
+          "海量物理专线池",
+          "极速高带宽保障",
+          "全天候运维"
+        ]
+      },
+      {
+        "name": "精选方案 · 永久不过期",
+        "traffic": "100 GB (永久有效)",
+        "price": "¥100.00 / 一次性",
+        "discounted_price": "重置仅原价 90% (¥90)",
+        "features": [
+          "无限时长购买后不自动重置",
+          "所有节点 x1 倍率不限速"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "brand_name": "Sogo云 (Sogo Cloud)",
+    "slug": "brand-sogo.html",
+    "logo_url": "https://jichangbang.top/assets/sogo-logo-hd.png",
+    "line_type": "全 IPLC / IEPL 物理专线 + 原生双 ISP",
+    "rating": "9.3 / 10 卓越 (晚高峰极速专线 · 原生双 ISP 专线)",
+    "tagline": "最高 2.5Gbps 物理峰值，原生双 ISP 跨境架构，全节点 X1 真实倍率，晚高峰高并发不限速。",
+    "core_features": [
+      "全 IPLC/IEPL 物理专线接入 + 原生纯净双 ISP 出口",
+      "单节点最高 2.5Gbps 峰值带宽，全节点统一 x1 真实倍率",
+      "不限制在线客户端数量",
+      "提供四档永久不过期买断流量包 (最高 1.0TB)"
+    ],
+    "coupon_code": "官方自带周期折扣 (季付/半年付/年付)",
+    "starting_price": {
+      "yearly_starting": "¥98.00/年 (折合 ¥8.17/月)",
+      "monthly_starting": "¥25.00/月 (150GB/月)"
+    },
+    "official_url": "https://wzjc.sogoyunaff.cc/#/?code=FjYjB9gY",
+    "packages": [
+      {
+        "name": "小包-年付版",
+        "traffic": "60 GB / 月",
+        "price": "¥98.00 / 年",
+        "discounted_price": "折合 ¥8.17/月",
+        "features": [
+          "全 IPLC/IEPL 专线",
+          "原生纯净双 ISP 出口",
+          "支持多端在线"
+        ]
+      },
+      {
+        "name": "精选方案 · 日常轻量",
+        "traffic": "150 GB / 月",
+        "price": "¥25.00 / 月",
+        "discounted_price": "¥25.00/月",
+        "features": [
+          "最高 2.5Gbps 峰值带宽",
+          "4K 秒开，ChatGPT/Claude 秒级响应"
+        ]
+      },
+      {
+        "name": "精选方案 · 最多白领通用首选",
+        "traffic": "350 GB / 月",
+        "price": "¥45.00 / 月",
+        "discounted_price": "¥45.00/月",
+        "features": [
+          "晚高峰并发不限速无卡顿",
+          "原生双 ISP 住宅级纯净 IP"
+        ]
+      },
+      {
+        "name": "进阶方案 · 深度极客",
+        "traffic": "550 GB / 月",
+        "price": "¥80.00 / 月",
+        "discounted_price": "¥80.00/月",
+        "features": [
+          "超大 550GB 专线流量",
+          "低丢包企业级技术运维"
+        ]
+      },
+      {
+        "name": "旗舰方案 · 团队工作室",
+        "traffic": "1100 GB (1.1TB) / 月",
+        "price": "¥150.00 / 月",
+        "discounted_price": "¥150.00/月",
+        "features": [
+          "全节点满速并发保障",
+          "一对一 VIP 客服优先响应"
+        ]
+      },
+      {
+        "name": "永久不限时 (120G)",
+        "traffic": "120 GB (永久有效)",
+        "price": "¥120.00 / 一次性",
+        "discounted_price": "¥120.00 买断",
+        "features": [
+          "随用随停不设过期时间",
+          "全节点 x1 真实倍率"
+        ]
+      },
+      {
+        "name": "永久不限时 (250G)",
+        "traffic": "250 GB (永久有效)",
+        "price": "¥250.00 / 一次性",
+        "discounted_price": "¥250.00 买断",
+        "features": [
+          "原生双 ISP 纯净线路支持",
+          "长期出差与备用首选"
+        ]
+      },
+      {
+        "name": "永久不限时 (500G)",
+        "traffic": "500 GB (永久有效)",
+        "price": "¥450.00 / 一次性",
+        "discounted_price": "¥450.00 买断",
+        "features": [
+          "500GB 永久海量储备",
+          "全节点晚高峰不限速"
+        ]
+      },
+      {
+        "name": "永久不限时 · 顶配 (1TB)",
+        "traffic": "1000 GB (1.0TB) (永久有效)",
+        "price": "¥850.00 / 一次性",
+        "discounted_price": "¥850.00 买断",
+        "features": [
+          "1.0TB 永久不过期终极储备",
+          "企业级优先级路由保障"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "brand_name": "宇宙云 (YuZhou Cloud)",
+    "slug": "brand-yuzhou.html",
+    "logo_url": "https://jichangbang.top/assets/yuzhou-logo-hd.png",
+    "line_type": "全内网 IPLC 物理专线",
+    "rating": "9.2 / 10 卓越 (晚高峰极速专线 · 跨境大带宽 IPLC)",
+    "tagline": "全内网 IPLC 物理专线，单节点最高 2.5Gbps，所有节点 X1 真实倍率，提供不限时包与独享定制。",
+    "core_features": [
+      "全内网 IPLC 物理专线架构，单节点最高 2.5Gbps",
+      "全节点统一 x1 真实倍率计费，晚高峰高并发不限速",
+      "不限制在线客户端数量",
+      "支持原生住宅家宽独立独享 IP 定制"
+    ],
+    "coupon_code": "官方自带周期优惠折扣",
+    "starting_price": {
+      "yearly_starting": "¥96.00/年 (折合约 ¥8.00/月)",
+      "monthly_starting": "¥25.00/月 (150GB/月)"
+    },
+    "official_url": "https://wzjc.yuzoucloud.cc/#/?code=FjYjB9gY",
+    "packages": [
+      {
+        "name": "星云年付小包 (Annual Plan)",
+        "traffic": "60 GB / 月",
+        "price": "¥96.00 / 年",
+        "discounted_price": "折合约 ¥8.00 / 月",
+        "features": [
+          "全内网 IPLC 物理专线",
+          "原生 IP 解锁流媒体与 AI"
+        ]
+      },
+      {
+        "name": "年付精选",
+        "traffic": "120 GB / 月",
+        "price": "¥188.00 / 年",
+        "discounted_price": "折合约 ¥15.67 / 月",
+        "features": [
+          "最高 2.5Gbps 峰值",
+          "4K 超清秒开"
+        ]
+      },
+      {
+        "name": "日常轻量",
+        "traffic": "150 GB / 月",
+        "price": "¥25.00 / 月",
+        "discounted_price": "¥25.00/月",
+        "features": [
+          "Netflix/Disney+/YouTube 4K 秒开",
+          "原生 IP 解锁 ChatGPT"
+        ]
+      },
+      {
+        "name": "恒星标准版 (Standard Plan)",
+        "traffic": "320 GB / 月",
+        "price": "¥50.00 / 月",
+        "discounted_price": "¥50.00/月",
+        "features": [
+          "320GB 充沛专线流量",
+          "多端设备协同稳定在线"
+        ]
+      },
+      {
+        "name": "进阶方案",
+        "traffic": "650 GB / 月",
+        "price": "¥100.00 / 月",
+        "discounted_price": "¥100.00/月",
+        "features": [
+          "全线极致低延迟通道",
+          "不限制在线客户端数量"
+        ]
+      },
+      {
+        "name": "团队旗舰",
+        "traffic": "1400 GB (1.4TB) / 月",
+        "price": "¥200.00 / 月",
+        "discounted_price": "¥200.00/月",
+        "features": [
+          "最高级别网络吞吐与优先通道",
+          "企业级技术运维"
+        ]
+      },
+      {
+        "name": "永久不限时 (120G)",
+        "traffic": "120 GB (永久有效)",
+        "price": "¥110.00 / 一次性",
+        "discounted_price": "¥110.00 买断",
+        "features": [
+          "永不按月清零随用随停",
+          "全节点 x1 真实倍率"
+        ]
+      },
+      {
+        "name": "永久不限时 · 极客备用 (240G)",
+        "traffic": "240 GB (永久有效)",
+        "price": "¥220.00 / 一次性",
+        "discounted_price": "¥220.00 买断",
+        "features": [
+          "全线 IPLC 专线隧道",
+          "随时支持加购补充"
+        ]
+      },
+      {
+        "name": "独享定制 (美国家宽)",
+        "traffic": "500 GB / 独享资源",
+        "price": "¥600.00 / 一次性 (月计)",
+        "discounted_price": "¥600.00/月",
+        "features": [
+          "赠送 500GB 原生住宅家宽流量",
+          "独立独享公网住宅 IP 防封"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "brand_name": "光年梯 (Guangnianti)",
+    "slug": "brand-guangnianti.html",
+    "logo_url": "https://jichangbang.top/assets/guangnianti-logo-hd.png?v=20261103",
+    "line_type": "全套 IPLC 国际物理专线",
+    "rating": "9.0 / 10 卓越 (极致平价专线 · IPLC 国际专线)",
+    "tagline": "年付限时套餐、入门至至尊四档周期方案，以及独享私人专线节点，全系标配 IPLC 专线与 x1 倍率。",
+    "core_features": [
+      "全套 IPLC 国际物理专线，单节点最高 2.5Gbps 速率",
+      "所有节点统一 X1 真实倍率计费，晚高峰不限速不降速",
+      "不限制同时在线设备数量，原生 IP 深度解锁 AI",
+      "官方自带年付 8折 / 2年付 7折 / 3年付 6折，可叠加专属优惠码 gnt888"
+    ],
+    "coupon_code": "gnt888 (专属优惠码，可与官方年付折扣叠加)",
+    "starting_price": {
+      "yearly_starting": "¥89.00/年 (折合约 ¥7.42/月)",
+      "monthly_starting": "¥18.00/月 (入门版 110GB/月，年付折后 ¥14.40/月)"
+    },
+    "official_url": "https://ggmq.gntaff.com/#/?code=RAJFvngV",
+    "packages": [
+      {
+        "name": "年付限时套餐",
+        "traffic": "50 GB / 月",
+        "price": "¥89.00 / 年",
+        "discounted_price": "折合约 ¥7.42 / 月",
+        "features": [
+          "全 IPLC 专线通道",
+          "全节点 X1 真实倍率",
+          "原生 IP 解锁 ChatGPT 与流媒体"
+        ]
+      },
+      {
+        "name": "光年梯 入门版",
+        "traffic": "110 GB / 月",
+        "price": "¥18.00 / 月",
+        "discounted_price": "年付享 8 折 (¥14.40/月)",
+        "features": [
+          "110G 充沛专线流量",
+          "单节点最高 2.5Gbps",
+          "4K 超清流媒体秒开"
+        ]
+      },
+      {
+        "name": "光年梯 晋级版",
+        "traffic": "220 GB / 月",
+        "price": "¥34.00 / 月",
+        "discounted_price": "年付享 8 折 (¥27.20/月)",
+        "features": [
+          "晚高峰并发不限速",
+          "原生纯净 IP 深度支持 AI 生态"
+        ]
+      },
+      {
+        "name": "光年梯 专业版",
+        "traffic": "450 GB / 月",
+        "price": "¥68.00 / 月",
+        "discounted_price": "年付享 8 折 (¥54.40/月)",
+        "features": [
+          "全专线低延迟保障通道",
+          "多设备高并发无瓶颈"
+        ]
+      },
+      {
+        "name": "光年梯 至尊版",
+        "traffic": "900 GB / 月",
+        "price": "¥130.00 / 月",
+        "discounted_price": "年付享 8 折 (¥104.00/月)",
+        "features": [
+          "900G 旗舰流量池",
+          "最高 2.5Gbps 物理峰值速率",
+          "VIP 专属售后服务"
+        ]
+      },
+      {
+        "name": "独享私人专线节点",
+        "traffic": "500 GB / 月 独立公网IP",
+        "price": "¥680.00 / 月",
+        "discounted_price": "¥680.00/月",
+        "features": [
+          "独享独立公网 IP 零干扰防封禁",
+          "TikTok 美区运营与跨境电商店铺首选"
+        ]
+      }
+    ]
+  }
+]

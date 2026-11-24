@@ -1,0 +1,126 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Clash Verge Rev 新手小白使用图文教程 (Windows/Mac) | 机场clash"
+  description="2026 最新 Clash Verge Rev 详细新手配置保姆级教程。从下载安装、订阅链接导入、节点测速选择到开启 TUN 模式与系统代理全流程解析。"
+  keywords="Clash使用教程, Clash Verge教程, Clash配置, 订阅链接导入, TUN模式怎么开, 系统代理, Clash新手指南, 科学上网教程"
+  canonicalPath="/tutorials/clash-guide"
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-xs text-slate-500 mb-6">
+      <a href="/" class="hover:text-blue-600">首页</a>
+      <span>/</span>
+      <a href="/tutorials/clash-guide" class="text-blue-600 font-medium">使用教程</a>
+      <span>/</span>
+      <span>Clash Verge Rev 保姆级配置教程</span>
+    </nav>
+
+    <!-- Header -->
+    <div class="space-y-4 border-b border-slate-200 dark:border-slate-800 pb-8">
+      <span class="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300">
+        📚 新手必备教程
+      </span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+        Clash Verge Rev 新手完整上手教程 (Win/Mac通用)
+      </h1>
+      <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400">
+        由于原 Clash for Windows 作者已停更，目前开源社区最推荐替代品为 **Clash Verge Rev**（基于 Tauri + Mihomo 内核开发，内存占用更低、支持中文与原生 TUN 网卡模式）。
+      </p>
+      <div class="flex items-center gap-4 text-xs text-slate-400">
+        <span>更新日期：2026年最新版</span>
+        <span>阅读耗时：约 5 分钟</span>
+        <span>适用系统：Windows 10/11, macOS, Linux</span>
+      </div>
+    </div>
+
+    <!-- Article Content -->
+    <article class="prose prose-slate dark:prose-invert max-w-none pt-8 space-y-8 text-slate-700 dark:text-slate-300">
+      
+      <!-- Step 1 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-bold">1</span>
+          下载并安装 Clash Verge Rev 客户端
+        </h2>
+        <p class="text-sm leading-relaxed">
+          请务必认准官方 GitHub 开源仓库地址下载，切勿在百度搜索下载任何捆绑广告或被篡改的安装包：
+        </p>
+        <div class="p-4 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 space-y-2 text-xs sm:text-sm">
+          <div class="font-semibold text-slate-900 dark:text-white">官方下载途径：</div>
+          <ul class="list-disc list-inside space-y-1 text-slate-600 dark:text-slate-300">
+            <li>GitHub 官方 Releases 页面：<a href="https://github.com/clash-verge-rev/clash-verge-rev/releases" target="_blank" class="text-blue-600 dark:text-blue-400 font-mono underline">github.com/clash-verge-rev/clash-verge-rev/releases</a></li>
+            <li><strong>Windows 用户</strong>：下载结尾为 <code>x64-setup.exe</code> 安装程序；</li>
+            <li><strong>Mac (M1/M2/M3/M4芯片)</strong>：下载结尾为 <code>aarch64.dmg</code>；</li>
+            <li><strong>Mac (Intel芯片)</strong>：下载结尾为 <code>x64.dmg</code>。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Step 2 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-bold">2</span>
+          在机场后台获取并复制 Clash 订阅链接
+        </h2>
+        <p class="text-sm leading-relaxed">
+          1. 登录您所购买的机场管理面板（若尚未购买，可参考本站 <a href="/#airports" class="text-blue-600 font-bold underline">2026 精选机场推荐榜</a>）；<br />
+          2. 进入用户仪表盘，找到【仪表盘】或【我的订阅】区域；<br />
+          3. 寻找【一键导入】或【订阅链接】，选择【复制 Clash 订阅】（链接通常以 <code>https://...</code> 开头）。
+        </p>
+      </section>
+
+      <!-- Step 3 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-bold">3</span>
+          导入订阅至 Clash Verge Rev
+        </h2>
+        <p class="text-sm leading-relaxed">
+          1. 打开 Clash Verge Rev 软件；<br />
+          2. 在左侧菜单栏点击【配置 / Profiles】；<br />
+          3. 在顶部输入框粘贴刚才复制的机场订阅链接，然后点击右侧的【保存 / 导入】按钮；<br />
+          4. 成功拉取配置后，右键该配置卡片，选择【使用 / 设为活跃】（卡片会变成高亮选中状态）。
+        </p>
+      </section>
+
+      <!-- Step 4 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-bold">4</span>
+          测速并选择节点，开启代理开关
+        </h2>
+        <p class="text-sm leading-relaxed">
+          1. 点击左侧菜单栏的【代理 / Proxies】；<br />
+          2. 代理模式建议选择【规则 / Rule】模式（此模式国内网站直连、海外网站走代理，不浪费流量且网速更快）；<br />
+          3. 点击右上角的闪电图标⚡进行批量延迟测速，选择一个延迟显示绿色毫秒数（如 30ms-60ms）的节点（推荐香港、日本、新加坡或美国专线）；<br />
+          4. 回到左下角或左侧设置，打开【系统代理 / System Proxy】开关；<br />
+          5. 此时打开浏览器访问 YouTube 或 Google 即可极速秒开！
+        </p>
+      </section>
+
+      <!-- Advanced Tip -->
+      <section class="p-6 rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-800/80 border border-blue-200 dark:border-blue-900/60 space-y-3">
+        <h3 class="text-base font-bold text-blue-900 dark:text-blue-300 flex items-center gap-2">
+          💡 进阶技巧：开启 TUN 模式（虚拟网卡全量加速）
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          如果您的部分软件（如外服游戏 Steam/Valorant、Windows 终端命令行、Docker 或某些不遵循系统代理的特定应用）无法走代理，可以在 Clash Verge Rev 设置中安装服务模式并开启 <strong>TUN 模式</strong>。开启后系统会虚拟出一块专用网卡，将整机全部网络流量精准智能分流，无需单独配置任何软件代理端口。
+        </p>
+      </section>
+
+      <!-- Return Button -->
+      <div class="pt-8 text-center">
+        <a
+          href="/#airports"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md transition-all"
+        >
+          挑选稳定高速的专线机场节点 &rarr;
+        </a>
+      </div>
+
+    </article>
+  </div>
+</BaseLayout>

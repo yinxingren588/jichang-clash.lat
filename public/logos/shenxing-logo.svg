@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c1d"/>
+      <stop offset="50%" stop-color="#0d1527"/>
+      <stop offset="100%" stop-color="#1a0c2e"/>
+    </linearGradient>
+
+    <!-- Neon Cyan to Violet-Pink Gradient -->
+    <linearGradient id="speedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="45%" stop-color="#38BDF8"/>
+      <stop offset="80%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <!-- Lightning Bolt Yellow/Orange Glow -->
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
+    </linearGradient>
+
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="200" height="200" rx="44" fill="url(#bgGrad)"/>
+  <rect width="196" height="196" x="2" y="2" rx="42" fill="none" stroke="url(#speedGrad)" stroke-width="2" stroke-opacity="0.35"/>
+
+  <!-- Energy Wave Circles -->
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#00F2FE" stroke-width="1.5" stroke-dasharray="5 5" opacity="0.25"/>
+  <circle cx="100" cy="100" r="48" fill="#38BDF8" opacity="0.1" filter="url(#neonGlow)"/>
+
+  <!-- Central "神行" Swift Wing & Supersonic Comet -->
+  <g transform="translate(100, 100)">
+    <!-- Aerodynamic Speed Trails (Supersonic motion) -->
+    <path d="M -54,-24 C -30,-28 10,-24 46,-12" fill="none" stroke="#00F2FE" stroke-width="2" opacity="0.4" stroke-dasharray="8 4"/>
+    <path d="M -58,0 C -30,-4 15,2 52,14" fill="none" stroke="#38BDF8" stroke-width="2.5" opacity="0.6" stroke-dasharray="12 4"/>
+    <path d="M -52,24 C -28,20 18,24 48,32" fill="none" stroke="#A855F7" stroke-width="2" opacity="0.4" stroke-dasharray="8 4"/>
+
+    <!-- Left Wing Feathers (Ascending Hermes Wing) -->
+    <path d="M -28,34 C -38,12 -34,-18 -12,-44 C -8,-24 -6,-10 6,-2 C -10,8 -18,20 -28,34 Z" fill="url(#speedGrad)" opacity="0.85" filter="url(#neonGlow)"/>
+    
+    <!-- Main Center Wing / Blade -->
+    <path d="M -10,40 C -18,14 -12,-24 16,-52 C 16,-28 24,-12 38,2 C 18,12 6,24 -10,40 Z" fill="url(#speedGrad)"/>
+
+    <!-- Sharp Lightning Bolt Piercing Forward -->
+    <polygon points="-8,-16 12,-16 2,-2 18,-2 -6,28 0,6 -14,6" fill="url(#boltGrad)" filter="url(#neonGlow)"/>
+  </g>
+
+  <!-- Orbital Cyber Sparks -->
+  <polygon points="154,44 157,51 164,53 157,55 154,62 151,55 144,53 151,51" fill="#00F2FE"/>
+  <polygon points="44,148 46,153 51,155 46,157 44,162 42,157 37,155 42,153" fill="#F43F5E" opacity="0.9"/>
+  <circle cx="162" cy="138" r="2.5" fill="#FEF08A" opacity="0.75"/>
+</svg>

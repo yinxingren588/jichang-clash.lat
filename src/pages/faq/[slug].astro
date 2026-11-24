@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { allFaqs, getRelatedFaqs, type FAQItem } from '../../data/faqs';
+import { renderMarkdown } from '../../utils/markdown';
+
+export async function getStaticPaths() {
+  return allFaqs.map((faq) => ({
+    params: { slug: faq.slug },
+    props: { faq },
+  }));
+}
+
+interface Props {
+  faq: FAQItem;
+}
+
+const { faq } = Astro.props;
+const relatedFaqs = getRelatedFaqs(faq.slug, 3);
+const formattedAnswer = renderMarkdown(faq.a);
+
+// Category theme styling
+const categoryStyles: Record<string, string> = {
+  "机场选购与避坑篇": "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800",
+  "Clash客户端与核心配置篇": "bg-blue-50 text-blue-700 dark:bg-blue-950/60 dark:text-blue-300 border-blue-200 dark:border-blue-800",
+  "日常网络报错与故障排查篇": "bg-amber-50 text-amber-700 dark:bg-amber-950/60 dark:text-amber-300 border-amber-200 dark:border-amber-800",
+  "流媒体与AI解锁篇": "bg-purple-50 text-purple-700 dark:bg-purple-950/60 dark:text-purple-300 border-purple-200 dark:border-purple-800",
+  "进阶网络技巧与隐私安全篇": "bg-indigo-50 text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800",
+};
+
+// Plain text answer for meta description & JSON-LD
+const plainAnswerText = faq.a.replace(/[*#`\n-]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 160);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "QAPage",
+  "mainEntity": {
+    "@type": "Question",
+    "name": faq.q,
+    "text": faq.q,
+    "answerCount": 1,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": plainAnswerText,
+      "dateCreated": "2026-03-01T00:00:00Z",
+      "url": `https://jichang-clash.lat/faq/${faq.slug}`
+    }
+  }
+};
+---
+
+<BaseLayout
+  title={`${faq.q} | 常见问答 (FAQ) | 机场clash`}
+  description={faq.summary || plainAnswerText}
+  keywords={`${faq.tags.join(', ')}, ${faq.category}, ${faq.q}, Clash常见问题, 机场FAQ, 翻墙排查`}
+  canonicalPath={`/faq/${faq.slug}`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 space-y-10">
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-xs text-slate-500 overflow-x-auto whitespace-nowrap pb-1">
+      <a href="/" class="hover:text-blue-600 transition-colors">首页</a>
+      <span>/</span>
+      <a href="/faq" class="hover:text-blue-600 transition-colors">常见问答 (FAQ)</a>
+      <span>/</span>
+      <span class="text-slate-400">{faq.category}</span>
+      <span>/</span>
+      <span class="text-blue-600 dark:text-blue-400 font-medium truncate max-w-xs sm:max-w-md">{faq.q}</span>
+    </nav>
+
+    <!-- Question Header -->
+    <header class="space-y-4">
+      <div class="flex flex-wrap items-center gap-2.5">
+        <span class={`text-xs font-bold px-3 py-1 rounded-full border ${categoryStyles[faq.category] || 'bg-slate-100 text-slate-700'}`}>
+          {faq.category}
+        </span>
+        <span class="text-xs text-slate-400 flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          2026最新更新
+        </span>
+        <span class="text-xs text-slate-400">· 独立问题解答页</span>
+      </div>
+
+      <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 dark:text-white leading-tight tracking-tight">
+        ❓ {faq.q}
+      </h1>
+
+      {faq.tags && faq.tags.length > 0 && (
+        <div class="flex flex-wrap gap-1.5 pt-1">
+          {faq.tags.map(tag => (
+            <span class="text-[11px] font-medium px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
+              #{tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <!-- Quick Summary Box -->
+    {faq.summary && (
+      <div class="bg-gradient-to-r from-blue-50 to-indigo-50/50 dark:from-slate-800 dark:to-slate-800/60 border border-blue-100 dark:border-slate-700 rounded-2xl p-4 sm:p-5 flex items-start gap-3.5 shadow-sm">
+        <div class="w-7 h-7 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs shadow-md shadow-blue-500/20">
+          💡
+        </div>
+        <div class="space-y-1">
+          <div class="text-xs font-bold text-blue-900 dark:text-blue-300 uppercase tracking-wider">核心要点概述</div>
+          <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+            {faq.summary}
+          </p>
+        </div>
+      </div>
+    )}
+
+    <!-- Detailed Answer Article -->
+    <article class="bg-white dark:bg-slate-800/90 rounded-3xl border border-slate-200/80 dark:border-slate-700/80 p-6 sm:p-9 shadow-sm space-y-6">
+      <div class="flex items-center gap-2 border-b border-slate-100 dark:border-slate-700/80 pb-4">
+        <span class="w-8 h-8 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold text-sm">
+          ✓
+        </span>
+        <h2 class="text-lg font-bold text-slate-900 dark:text-white">完整解答与实操指引</h2>
+      </div>
+
+      <!-- Rendered HTML Content -->
+      <div class="faq-content text-slate-700 dark:text-slate-300 leading-relaxed" set:html={formattedAnswer} />
+
+      <!-- Copy Link & Share Actions -->
+      <div class="pt-6 border-t border-slate-100 dark:border-slate-700/80 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <button
+            type="button"
+            onclick="navigator.clipboard.writeText(window.location.href); alert('已成功复制本文链接！');"
+            class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 transition-colors cursor-pointer"
+          >
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+            </svg>
+            复制本问答链接
+          </button>
+        </div>
+
+        <a
+          href="/faq"
+          class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline"
+        >
+          &larr; 返回所有常见问答 (FAQ)
+        </a>
+      </div>
+    </article>
+
+    <!-- Cross-Navigation Action Banners -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <a
+        href="/tutorials/clash-guide"
+        class="group p-5 rounded-2xl bg-gradient-to-br from-blue-500/5 to-indigo-500/5 hover:from-blue-500/10 hover:to-indigo-500/10 border border-blue-200/60 dark:border-blue-900/40 transition-all flex items-center justify-between"
+      >
+        <div class="space-y-1">
+          <span class="text-[11px] font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">推荐教程</span>
+          <h4 class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
+            Clash Verge Rev 保姆级新手教程 &rarr;
+          </h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400">零基础图文配置，解决 90% 节点连接与报错</p>
+        </div>
+      </a>
+
+      <a
+        href="/"
+        class="group p-5 rounded-2xl bg-gradient-to-br from-amber-500/5 to-rose-500/5 hover:from-amber-500/10 hover:to-rose-500/10 border border-amber-200/60 dark:border-amber-900/40 transition-all flex items-center justify-between"
+      >
+        <div class="space-y-1">
+          <span class="text-[11px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">精选排行</span>
+          <h4 class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-amber-600 transition-colors">
+            2026 精选高速专线机场排行榜 &rarr;
+          </h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400">综合测评稳定性、晚高峰速率与独家优惠券</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Related Questions Section -->
+    {relatedFaqs && relatedFaqs.length > 0 && (
+      <section class="space-y-4 pt-4 border-t border-slate-200 dark:border-slate-800">
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+          <span>📌 猜您还想了解的相关问题</span>
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+          {relatedFaqs.map(item => (
+            <a
+              href={`/faq/${item.slug}`}
+              class="group block p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700/80 hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-md transition-all space-y-2"
+            >
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
+                {item.category}
+              </span>
+              <h4 class="text-xs font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2 leading-snug">
+                {item.q}
+              </h4>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-2 leading-relaxed">
+                {item.summary || item.a.slice(0, 50)}
+              </p>
+              <div class="text-[11px] font-semibold text-blue-600 dark:text-blue-400 flex items-center gap-1 pt-1">
+                阅读独立解答 &rarr;
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</BaseLayout>

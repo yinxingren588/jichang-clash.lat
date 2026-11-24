@@ -1,0 +1,201 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { airportsData } from '../data/airports';
+import { allFaqs, faqCategories } from '../data/faqs';
+
+const corePages = [
+  { href: "/", title: "网站首页", desc: "全球跨境专线 · 机场clash 权威评测与推荐平台", badge: "核心" },
+  { href: "/airports", title: "精选专线机场推荐榜", desc: "严格实测甄选的 34 家优质机场节点分类推荐", badge: "榜单" },
+  { href: "/comparison", title: "34家机场核心参数横向对比", desc: "价格门槛、专线类型、晚高峰测速与优惠码对比", badge: "工具" },
+  { href: "/clients", title: "全平台客户端下载中心", desc: "Windows、macOS、Android、iOS 官方最新正版下载", badge: "下载" },
+  { href: "/tutorials/clash-guide", title: "Clash Verge Rev 保姆级新手教程", desc: "从安装、订阅导入到开启 TUN 模式全流程解析", badge: "教程" },
+  { href: "/faq", title: "常见问答中心 (FAQ 大全)", desc: "收录 58 个高价值翻墙排查与专线选购问答", badge: "FAQ" },
+  { href: "/reviews", title: "机场深度测评专栏汇总", desc: "所有上榜机场的详细评测报告与专属折扣码", badge: "评测" },
+  { href: "/about", title: "评测准则与量化打分体系", desc: "客观实测标准、五大权重说明与免责声明", badge: "准则" },
+  { href: "/about#privacy", title: "用户隐私保护政策", desc: "零日志、零个人数据收集与无订阅劫持承诺", badge: "政策" },
+  { href: "/about#terms", title: "服务条款与合规声明", desc: "学术交流用途说明与法律合规合规指引", badge: "条款" },
+];
+
+// Group FAQs by category
+const faqsByCat = faqCategories.map(cat => ({
+  ...cat,
+  items: allFaqs.filter(f => f.category === cat.name)
+}));
+---
+
+<BaseLayout
+  title="网站地图 (Sitemap) - 全站100+内容索引与快捷导航 | 机场clash"
+  description="机场clash 网站地图全景索引。收录 2026 最新精选专线机场测评、34家机场横向参数对比表、全平台 Clash 客户端下载、新手保姆级图文配置教程与 58 个常见疑难排查 FAQ 快速导航。"
+  keywords="网站地图, sitemap, 机场clash网站地图, clash机场索引, 翻墙教程全景, 机场测评大全"
+  canonicalPath="/sitemap"
+>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-12">
+    
+    <!-- Page Header & Breadcrumbs -->
+    <div class="space-y-4 text-center max-w-3xl mx-auto">
+      <nav class="flex items-center justify-center gap-2 text-xs text-slate-500">
+        <a href="/" class="hover:text-blue-600 transition-colors">首页</a>
+        <span>/</span>
+        <span class="text-blue-600 dark:text-blue-400 font-medium">网站地图 (Sitemap)</span>
+      </nav>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
+        🗺️ 机场clash 全站地图索引
+      </h1>
+      <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        本页面汇集了整站全部 100+ 核心功能页、34 家机场评测专栏及 58 个深度疑难解答，方便读者与搜索引擎机器人快速索引直达。
+      </p>
+
+      <!-- XML Sitemap Machine Feeds Card -->
+      <div class="pt-2 flex flex-wrap items-center justify-center gap-2.5 text-xs">
+        <span class="text-slate-400">机器协议源：</span>
+        <a
+          href="/sitemap.xml"
+          target="_blank"
+          class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-blue-50 dark:bg-slate-800 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-slate-700 hover:border-blue-400 font-mono transition-colors"
+        >
+          <span>📄 /sitemap.xml</span>
+        </a>
+        <a
+          href="/sitemap-index.xml"
+          target="_blank"
+          class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 font-mono transition-colors"
+        >
+          <span>📑 /sitemap-index.xml</span>
+        </a>
+        <a
+          href="/robots.txt"
+          target="_blank"
+          class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 font-mono transition-colors"
+        >
+          <span>🤖 /robots.txt</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 1. Core Pages Section -->
+    <section class="space-y-4">
+      <div class="flex items-center gap-2.5 pb-2 border-b border-slate-200 dark:border-slate-800">
+        <span class="text-2xl">🏛️</span>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
+          核心栏目与功能页面
+        </h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 font-bold ml-auto">
+          {corePages.length} 个主要页面
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+        {corePages.map(page => (
+          <a
+            href={page.href}
+            class="group p-4 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700/80 hover:border-blue-500 hover:shadow-md transition-all flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-1.5">
+                <span class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  {page.title}
+                </span>
+                <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-500">
+                  {page.badge}
+                </span>
+              </div>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                {page.desc}
+              </p>
+            </div>
+            <span class="text-xs font-mono text-slate-400 dark:text-slate-500 mt-3 block group-hover:text-blue-500 transition-colors">
+              {page.href} &rarr;
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- 2. Airport Brands Reviews Section -->
+    <section class="space-y-4">
+      <div class="flex items-center gap-2.5 pb-2 border-b border-slate-200 dark:border-slate-800">
+        <span class="text-2xl">🏆</span>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
+          34 家精选专线机场测评专栏
+        </h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 font-bold ml-auto">
+          34 家独立品牌
+        </span>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5">
+        {airportsData.map((airport, idx) => (
+          <a
+            href={`/reviews/${airport.id}`}
+            class={`group p-3 rounded-xl border text-center transition-all ${
+              idx === 0
+                ? 'bg-gradient-to-b from-rose-50/80 to-white dark:from-rose-950/40 dark:to-slate-800 border-rose-200 dark:border-rose-900 shadow-xs'
+                : 'bg-white dark:bg-slate-800/90 border-slate-200 dark:border-slate-700/80 hover:border-blue-400'
+            }`}
+          >
+            {airport.logo ? (
+              <img
+                src={airport.logo}
+                alt={airport.name}
+                class="w-8 h-8 rounded-lg object-contain mx-auto mb-2 border border-slate-100 dark:border-slate-700 bg-white"
+              />
+            ) : (
+              <div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-950 text-blue-600 font-black text-xs flex items-center justify-center mx-auto mb-2">
+                #
+              </div>
+            )}
+            <div class="text-xs font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 truncate">
+              {airport.name}
+            </div>
+            <div class="text-[10px] text-slate-400 truncate mt-0.5">
+              {airport.price}
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- 3. All 58 FAQs by Category -->
+    <section class="space-y-8">
+      <div class="flex items-center gap-2.5 pb-2 border-b border-slate-200 dark:border-slate-800">
+        <span class="text-2xl">❓</span>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
+          58 个技术问答与疑难排查独立页面
+        </h2>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 font-bold ml-auto">
+          58 个专业解答
+        </span>
+      </div>
+
+      <div class="space-y-8">
+        {faqsByCat.map(cat => (
+          <div class="space-y-3">
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <span>{cat.icon}</span>
+              <span>{cat.name}</span>
+              <span class="text-xs font-normal text-slate-400">({cat.items.length} 篇)</span>
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+              {cat.items.map(faq => (
+                <a
+                  href={`/faq/${faq.slug}`}
+                  class="p-3 rounded-xl bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 hover:border-blue-400 hover:shadow-xs transition-all flex flex-col justify-between group"
+                >
+                  <span class="text-xs font-medium text-slate-800 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 line-clamp-2 leading-snug">
+                    {faq.q}
+                  </span>
+                  <span class="text-[10px] text-slate-400 mt-2 block font-mono truncate">
+                    /faq/{faq.slug} &rarr;
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>

@@ -1,0 +1,365 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { airportsData, type Airport } from '../../data/airports';
+
+export function getStaticPaths() {
+  return airportsData.map((airport) => ({
+    params: { id: airport.id },
+    props: { airport },
+  }));
+}
+
+interface Props {
+  airport: Airport;
+}
+
+const { airport } = Astro.props;
+---
+
+<BaseLayout
+  title={`${airport.name} 2026 最新测评与价格配套购买指南 | 机场clash`}
+  description={`${airport.name} 怎么样？好用吗？本文详细整理了 ${airport.name} 专线类型、流量价格配套方案、晚高峰测速、流媒体解锁报告及独家专属折扣码。`}
+  keywords={`${airport.name}, ${airport.name}怎么样, ${airport.name}官网, ${airport.name}优惠码, ${airport.name}测评, ${airport.lineType}, Clash机场推荐, 2026机场评测`}
+  canonicalPath={`/reviews/${airport.id}`}
+>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-10">
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-xs text-slate-500">
+      <a href="/" class="hover:text-blue-600">首页</a>
+      <span>/</span>
+      <a href="/airports" class="hover:text-blue-600">机场精选</a>
+      <span>/</span>
+      <span class="text-blue-600 font-medium">{airport.name}</span>
+    </nav>
+
+    <!-- Review Header -->
+    <div class="bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700/80 p-6 sm:p-8 space-y-6 shadow-sm">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+        <div class="flex items-start sm:items-center gap-4">
+          {airport.logo ? (
+            <img
+              src={airport.logo}
+              alt={airport.name}
+              class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-2xl bg-white dark:bg-slate-700 p-2 shadow-sm border border-slate-100 dark:border-slate-600 shrink-0"
+            />
+          ) : (
+            <div class="w-16 h-16 rounded-2xl bg-blue-100 dark:bg-blue-950 flex items-center justify-center text-blue-600 font-black text-xl shrink-0">
+              #
+            </div>
+          )}
+          <div>
+            {airport.badge && (
+              <span class="inline-block text-xs font-bold px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 dark:bg-rose-950 dark:text-rose-300 border border-rose-200 dark:border-rose-900 mb-2">
+                {airport.badge}
+              </span>
+            )}
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+              {airport.name} 详细评测与价格配套
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-2 max-w-2xl leading-relaxed">
+              {airport.tagline || "官方通道持续连通中，价格与节点详情敬请期待更新。"}
+            </p>
+          </div>
+        </div>
+
+        <div class="shrink-0 bg-blue-50 dark:bg-blue-950/60 p-4 rounded-2xl border border-blue-100 dark:border-blue-900 text-center sm:text-right">
+          <div class="text-xs text-slate-400">起步特惠</div>
+          <div class="text-3xl font-black text-blue-600 dark:text-blue-400">
+            {airport.price || "待收录"}
+          </div>
+          <div class="text-xs text-slate-500 font-medium">
+            {airport.traffic || "流量待更新"}
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick specs grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+        <div class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-xl">
+          <div class="text-xs text-slate-400">综合评分</div>
+          <div class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+            {airport.rating > 0 ? `⭐ ${airport.rating} / 5.0` : "评测中"}
+          </div>
+        </div>
+        <div class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-xl">
+          <div class="text-xs text-slate-400">专线架构</div>
+          <div class="text-base sm:text-lg font-bold text-slate-900 dark:text-white truncate">
+            {airport.lineType || "待定"}
+          </div>
+        </div>
+        <div class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-xl">
+          <div class="text-xs text-slate-400">测速性能</div>
+          <div class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+            {airport.speedRating || "高峰稳定"}
+          </div>
+        </div>
+        <div class="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-xl">
+          <div class="text-xs text-slate-400">网络在线率</div>
+          <div class="text-base sm:text-lg font-bold text-emerald-600 dark:text-emerald-400">
+            {airport.uptime || "99.9%"}
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Row -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100 dark:border-slate-700">
+        {airport.couponCode ? (
+          <div class="flex items-center gap-2 text-xs">
+            <span class="font-bold text-amber-500">独家优惠码：</span>
+            <span class="font-mono font-bold text-blue-600 text-sm bg-blue-50 dark:bg-blue-950 px-2 py-1 rounded border border-blue-200 dark:border-blue-800">{airport.couponCode}</span>
+            <span class="text-slate-400">({airport.couponDesc})</span>
+          </div>
+        ) : (
+          <div class="text-xs text-slate-400">
+            官方推广返利直达链接（直通官网开通）
+          </div>
+        )}
+        <a
+          href={airport.affUrl}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          class="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all text-center"
+        >
+          前往 {airport.name} 官网开通 &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- Pricing Packages Matrix -->
+    {airport.packages && airport.packages.length > 0 && (
+      <div class="bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700/80 p-6 sm:p-8 space-y-6 shadow-sm">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 dark:border-slate-700 pb-4 gap-2">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              💰 {airport.name} 价格配套与流量套餐明细（共 {airport.packages.length} 档）
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1">包含月付周期、年付特惠、企业定制及永不过期一次性买断包</p>
+          </div>
+          {airport.couponCode && (
+            <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-900 text-xs text-amber-700 dark:text-amber-300 font-bold shrink-0">
+              <span>🎟️ 独家 8 折优惠券: {airport.couponCode}</span>
+            </div>
+          )}
+        </div>
+
+        {airport.couponCode && (
+          <div class="p-4 rounded-2xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm text-amber-900 dark:text-amber-200">
+            <div class="flex items-center gap-2">
+              <span class="text-xl">💡</span>
+              <span><strong>专属优惠提示：</strong>选购下方任意套餐，在官网结账页面输入独家折扣码 <code class="px-2 py-0.5 font-mono font-bold bg-amber-200/80 dark:bg-amber-900 text-amber-900 dark:text-amber-100 rounded border border-amber-300 dark:border-amber-700">{airport.couponCode}</code> 即可享受全单 8 折优惠！</span>
+            </div>
+            <a
+              href={airport.affUrl}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              class="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold shrink-0 shadow-sm"
+            >
+              直达官网开通 &rarr;
+            </a>
+          </div>
+        )}
+
+        <!-- 3x3 Grid: 三排三个，共9个配套 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {airport.packages.map((pkg, idx) => (
+            <div class={`rounded-3xl border bg-white dark:bg-slate-900 p-6 flex flex-col justify-between shadow-sm hover:shadow-xl hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300 group ${
+              idx === 0
+                ? 'border-blue-500/60 ring-2 ring-blue-500/20'
+                : 'border-slate-200/90 dark:border-slate-700/80'
+            }`}>
+              
+              <!-- Card Header -->
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class={`px-2.5 py-0.5 rounded-full text-xs font-bold ${
+                    idx === 0
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300 border border-blue-200 dark:border-blue-800'
+                  }`}>
+                    {pkg.badge || '推荐套餐'}
+                  </span>
+                  <span class="text-[11px] font-semibold text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800/80 px-2 py-0.5 rounded-md">
+                    {pkg.available || '月付 / 年付'}
+                  </span>
+                </div>
+
+                <h3 class="text-xl font-black text-slate-900 dark:text-white tracking-tight group-hover:text-blue-600 transition-colors">
+                  {pkg.name}
+                </h3>
+                {pkg.subtitle && (
+                  <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2 leading-relaxed">
+                    {pkg.subtitle}
+                  </p>
+                )}
+
+                <!-- Price Box -->
+                <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-950/60 border border-slate-100 dark:border-slate-800/80 my-4">
+                  <div class="text-[10px] uppercase font-bold tracking-wider text-slate-400">CURRENT OFFER</div>
+                  <div class="text-2xl font-black text-blue-600 dark:text-blue-400 mt-0.5">
+                    {pkg.price}
+                  </div>
+                  {pkg.discounted_price && (
+                    <div class="text-xs font-bold text-emerald-600 dark:text-emerald-400 mt-1">
+                      🏷️ {pkg.discounted_price}
+                    </div>
+                  )}
+                </div>
+
+                <!-- 3 Spec Badges: 流量 / 速率 / 设备数 -->
+                <div class="grid grid-cols-3 gap-1.5 py-2.5 px-1 border-y border-slate-100 dark:border-slate-800/80 text-center">
+                  <div>
+                    <div class="text-[10px] text-slate-400 font-medium">流量</div>
+                    <div class="text-xs font-black text-slate-800 dark:text-slate-200 mt-0.5 truncate" title={pkg.traffic}>
+                      {pkg.traffic}
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-[10px] text-slate-400 font-medium">速率</div>
+                    <div class="text-xs font-black text-slate-800 dark:text-slate-200 mt-0.5">
+                      {pkg.speed || '不限速'}
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-[10px] text-slate-400 font-medium">设备数</div>
+                    <div class="text-xs font-black text-slate-800 dark:text-slate-200 mt-0.5">
+                      {pkg.devices || '不限'}
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Features Bullets -->
+                <div class="my-4 space-y-2">
+                  <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">套餐特色</div>
+                  <ul class="space-y-1.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                    {pkg.features.slice(0, 4).map(f => (
+                      <li class="flex items-start gap-1.5">
+                        <span class="text-emerald-500 font-bold shrink-0 mt-0.5">✓</span>
+                        <span class="line-clamp-2">{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <!-- CTA Button -->
+              <div class="pt-3 border-t border-slate-100 dark:border-slate-800 mt-auto">
+                <a
+                  href={airport.affUrl}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  class="w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-blue-500/20 hover:shadow-blue-500/30 transition-all text-center flex items-center justify-center gap-1.5"
+                >
+                  <span>立即订阅此套餐</span>
+                  <span>&rarr;</span>
+                </a>
+              </div>
+
+            </div>
+          ))}
+        </div>
+
+        {/* Text specs summary table */}
+        <div class="pt-6 border-t border-slate-100 dark:border-slate-700 space-y-4">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            📋 全 {airport.packages.length} 档套餐详细参数对比总表
+          </h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
+              <thead class="bg-slate-100 dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 font-bold border-b border-slate-200 dark:border-slate-700">
+                <tr>
+                  <th class="p-3">套餐名称</th>
+                  <th class="p-3">流量规格</th>
+                  <th class="p-3">官方标价</th>
+                  <th class="p-3 text-emerald-600">8折券后实付</th>
+                  <th class="p-3">核心亮点</th>
+                  <th class="p-3 text-right">开通入口</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                {airport.packages.map(pkg => (
+                  <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                    <td class="p-3 font-bold text-slate-900 dark:text-white">{pkg.name}</td>
+                    <td class="p-3 text-blue-600 dark:text-blue-400 font-semibold">{pkg.traffic}</td>
+                    <td class="p-3 font-semibold text-slate-700 dark:text-slate-300">{pkg.price}</td>
+                    <td class="p-3 font-bold text-emerald-600 dark:text-emerald-400">{pkg.discounted_price || "—"}</td>
+                    <td class="p-3 text-slate-500 max-w-xs">{pkg.features ? pkg.features.slice(0, 2).join('；') : "—"}</td>
+                    <td class="p-3 text-right">
+                      <a
+                        href={airport.affUrl}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        class="inline-block px-3 py-1 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-[11px]"
+                      >
+                        选购 &rarr;
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    )}
+
+    <!-- Review Detailed Breakdown -->
+    <div class="bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700/80 p-6 sm:p-8 space-y-6 shadow-sm">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white">
+        🔍 为什么推荐 {airport.name}？
+      </h2>
+      {airport.features && airport.features.length > 0 ? (
+        <div class="space-y-4">
+          {airport.features.map((feat, i) => (
+            <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-700/60">
+              <div class="w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
+                {i + 1}
+              </div>
+              <div class="text-sm text-slate-700 dark:text-slate-200 leading-relaxed font-medium">
+                {feat}
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/40 text-sm text-slate-500">
+          该品牌套餐与特色测速信息目前正在排期深度评测中，官方链接已正常连通，可直接点击上方按钮进入官网查看实时套餐。
+        </div>
+      )}
+
+      {airport.streamingUnlock && airport.streamingUnlock.length > 0 && (
+        <div class="pt-6 border-t border-slate-100 dark:border-slate-700 space-y-4">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white">流媒体与 AI 解锁实测</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+            经由 Clash Verge Rev 真实节点测试，{airport.name} 在以下平台均表现优秀，可无障碍原生观看或使用：
+          </p>
+          <div class="flex flex-wrap gap-2">
+            {airport.streamingUnlock.map(app => (
+              <span class="px-3 py-1.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-semibold text-xs border border-emerald-200 dark:border-emerald-800 flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                {app}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div class="pt-6 border-t border-slate-100 dark:border-slate-700 space-y-4">
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white">客户端兼容性</h3>
+        <div class="flex flex-wrap gap-2">
+          {airport.supportedClients.map(c => (
+            <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 font-medium text-xs">
+              ⚡ {c}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Return Link -->
+    <div class="text-center pt-4">
+      <a href="/airports" class="text-sm font-semibold text-blue-600 hover:underline">
+        &larr; 返回 2026 机场精选推荐总榜单
+      </a>
+    </div>
+  </div>
+</BaseLayout>

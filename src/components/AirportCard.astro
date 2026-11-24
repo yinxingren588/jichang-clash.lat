@@ -1,0 +1,289 @@
+---
+import type { Airport } from '../data/airports';
+
+interface Props {
+  airport: Airport;
+  index: number;
+  isFeatured?: boolean;
+}
+
+const { airport, index, isFeatured = false } = Astro.props;
+
+const badgeColors = {
+  rose: 'bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/60 dark:text-rose-300 dark:border-rose-900',
+  purple: 'bg-purple-50 text-purple-700 border-purple-200 dark:bg-purple-950/60 dark:text-purple-300 dark:border-purple-900',
+  emerald: 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/60 dark:text-emerald-300 dark:border-emerald-900',
+  blue: 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950/60 dark:text-blue-300 dark:border-blue-900',
+  amber: 'bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/60 dark:text-amber-300 dark:border-amber-900'
+};
+
+const currentBadgeClass = airport.badgeColor ? badgeColors[airport.badgeColor] : badgeColors.blue;
+---
+
+{isFeatured ? (
+  <div
+    class="airport-card col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-5 relative bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white rounded-3xl border-2 border-blue-500/50 shadow-2xl p-6 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-8 overflow-hidden group mb-4"
+    data-categories={JSON.stringify(airport.category)}
+    data-id={airport.id}
+  >
+    <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-blue-500/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -left-20 -top-20 w-96 h-96 bg-indigo-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="space-y-4 flex-1 z-10 w-full">
+      <div class="flex flex-wrap items-center gap-2.5">
+        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-black bg-gradient-to-r from-amber-500 to-rose-500 text-white shadow-md">
+          👑 Clash独家合作机场
+        </span>
+        {airport.uptime && (
+          <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30">
+            全网在线率 {airport.uptime}
+          </span>
+        )}
+        {airport.rating > 0 && (
+          <span class="text-xs text-amber-400 font-bold flex items-center gap-1">
+            ⭐ {airport.rating} / 5.0
+          </span>
+        )}
+      </div>
+
+      <div>
+        <div class="flex items-center gap-3.5">
+          {airport.logo && (
+            <img
+              src={airport.logo}
+              alt={airport.name}
+              class="w-12 h-12 object-contain rounded-2xl bg-white p-1 shadow-md border border-white/20 shrink-0"
+            />
+          )}
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <h3 class="text-2xl sm:text-3xl font-black tracking-tight text-white group-hover:text-blue-300 transition-colors">
+                {airport.name}
+              </h3>
+              {airport.lineType && (
+                <span class="px-2.5 py-0.5 text-xs font-bold rounded-lg bg-blue-600/40 text-blue-300 border border-blue-500/40">
+                  🚀 {airport.lineType}
+                </span>
+              )}
+              {airport.speedRating && (
+                <span class="hidden sm:inline-block px-2.5 py-0.5 text-xs font-bold rounded-lg bg-indigo-600/40 text-indigo-300 border border-indigo-500/40">
+                  ⚡ {airport.speedRating}
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+        <p class="text-sm sm:text-base text-slate-300 mt-2 max-w-3xl leading-relaxed">
+          {airport.tagline}
+        </p>
+      </div>
+
+      {airport.features.length > 0 && (
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-slate-200 pt-2 border-t border-white/10">
+          {airport.features.map(f => (
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>{f}</span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {airport.streamingUnlock.length > 0 && (
+        <div class="flex flex-wrap items-center gap-1.5 pt-1 text-xs">
+          <span class="text-slate-400 font-medium">全节点支持：</span>
+          {airport.streamingUnlock.map(tag => (
+            <span class="px-2 py-0.5 rounded-md bg-white/10 text-slate-200 border border-white/10 font-medium text-[11px]">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+
+    <div class="w-full lg:w-80 shrink-0 bg-white/10 backdrop-blur-md rounded-2xl border border-white/15 p-6 flex flex-col justify-between gap-4 z-10">
+      <div class="flex items-baseline justify-between">
+        <div>
+          <div class="text-xs text-slate-400">特惠起步价</div>
+          <div class="text-3xl sm:text-4xl font-black text-amber-400">{airport.price || "待收录"}</div>
+        </div>
+        <div class="text-right">
+          <div class="text-xs text-slate-300 font-medium">{airport.traffic}</div>
+          <div class="text-xs text-emerald-400 font-bold">{airport.speedRating}</div>
+        </div>
+      </div>
+
+      {airport.couponCode && (
+        <div class="flex items-center justify-between bg-black/40 border border-dashed border-amber-400/50 rounded-xl px-3 py-2 text-xs">
+          <div class="flex items-center gap-1.5">
+            <span class="text-amber-400 font-bold">🎟️</span>
+            <span class="font-mono font-bold text-amber-300 text-sm tracking-wider">{airport.couponCode}</span>
+            <span class="text-[11px] text-slate-400">({airport.couponDesc})</span>
+          </div>
+          <button
+            type="button"
+            class="copy-coupon-btn px-2.5 py-1 text-xs font-semibold bg-amber-500/20 text-amber-300 hover:bg-amber-400 hover:text-black rounded-lg transition-colors cursor-pointer"
+            data-code={airport.couponCode}
+          >
+            点击复制
+          </button>
+        </div>
+      )}
+
+      <div class="space-y-2">
+        <a
+          href={airport.affUrl}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          class="w-full inline-flex items-center justify-center px-5 py-3.5 rounded-xl text-sm font-black text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all"
+        >
+          直达隐形人官网开通 &rarr;
+        </a>
+        {airport.reviewSlug && (
+          <a
+            href={airport.reviewSlug}
+            class="w-full inline-flex items-center justify-center px-4 py-1.5 rounded-xl text-xs font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
+          >
+            查看 9 档完整套餐与评测 &rarr;
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+) : (
+  <div
+    class="airport-card group relative bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700/80 shadow-sm hover:shadow-xl hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300 flex flex-col justify-between overflow-hidden"
+    data-categories={JSON.stringify(airport.category)}
+    data-id={airport.id}
+  >
+    <div class="px-3.5 pt-3 flex items-center justify-between">
+      {airport.badge ? (
+        <span class={`inline-flex items-center text-[10px] font-bold px-2 py-0.5 rounded-full border ${currentBadgeClass}`}>
+          {airport.badge}
+        </span>
+      ) : (
+        <span class="text-[10px] text-slate-400">收录品牌</span>
+      )}
+      <span class="card-rank-num text-[10px] text-slate-400 font-semibold" data-original-rank={index + 1}>
+        #{index + 1}
+      </span>
+    </div>
+
+    <div class="p-3.5 sm:p-4 space-y-3 flex-1 flex flex-col justify-between">
+      <div>
+        <div class="flex items-start justify-between gap-1.5">
+          <div class="flex items-center gap-2 min-w-0">
+            {airport.logo ? (
+              <img
+                src={airport.logo}
+                alt={airport.name}
+                class="w-7 h-7 object-contain rounded-lg bg-white dark:bg-slate-700 p-0.5 shadow-xs border border-slate-100 dark:border-slate-600 shrink-0"
+              />
+            ) : (
+              <div class="w-7 h-7 rounded-lg bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-xs text-slate-400 font-bold shrink-0">
+                #
+              </div>
+            )}
+            <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors truncate">
+              {airport.name}
+            </h3>
+          </div>
+          <div class="text-right shrink-0">
+            {airport.price ? (
+              <span class="text-sm sm:text-base font-black text-blue-600 dark:text-blue-400">{airport.price}</span>
+            ) : (
+              <span class="text-xs text-slate-400">待收录</span>
+            )}
+          </div>
+        </div>
+        <p class="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-2 mt-1 leading-snug">
+          {airport.tagline || "套餐价格与专线节点信息收录中，敬请期待更新。"}
+        </p>
+      </div>
+
+      <div class="flex flex-wrap gap-1">
+        {airport.lineType ? (
+          <span class="inline-flex text-[10px] font-semibold px-1.5 py-0.5 rounded bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900 truncate max-w-full">
+            {airport.lineType}
+          </span>
+        ) : (
+          <span class="inline-flex text-[10px] font-medium px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-400">
+            专线待定
+          </span>
+        )}
+        {airport.traffic && (
+          <span class="inline-flex text-[10px] font-medium px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
+            {airport.traffic}
+          </span>
+        )}
+      </div>
+
+      {airport.features.length > 0 ? (
+        <div class="space-y-1 pt-1.5 border-t border-slate-100 dark:border-slate-700/60 text-[11px] text-slate-600 dark:text-slate-300">
+          {airport.features.slice(0, 2).map(f => (
+            <div class="flex items-start gap-1 line-clamp-1">
+              <span class="text-emerald-500 font-bold shrink-0">✓</span>
+              <span class="truncate">{f}</span>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="pt-1.5 border-t border-slate-100 dark:border-slate-700/60 text-[11px] text-slate-400 italic">
+          官方通道持续连通中
+        </div>
+      )}
+
+      {airport.streamingUnlock.length > 0 && (
+        <div class="flex flex-wrap gap-1 pt-0.5">
+          {airport.streamingUnlock.slice(0, 3).map(tag => (
+            <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+
+    <div class="p-3 bg-slate-50 dark:bg-slate-800/80 border-t border-slate-100 dark:border-slate-700/80 space-y-2">
+      {airport.couponCode ? (
+        <div class="flex items-center justify-between bg-white dark:bg-slate-900 border border-dashed border-blue-200 dark:border-blue-900 rounded-lg px-2 py-1 text-[11px]">
+          <span class="font-mono font-bold text-blue-600 dark:text-blue-400 truncate">{airport.couponCode}</span>
+          <button
+            type="button"
+            class="copy-coupon-btn text-[10px] font-semibold text-blue-600 dark:text-blue-300 hover:underline shrink-0 ml-1 cursor-pointer"
+            data-code={airport.couponCode}
+          >
+            复制券
+          </button>
+        </div>
+      ) : (
+        <div class="py-1 text-[11px] text-slate-400 text-center font-mono">
+          - 专属通道直达 -
+        </div>
+      )}
+
+      <div class="grid grid-cols-2 gap-1.5">
+        {airport.reviewSlug && (
+          <a
+            href={airport.reviewSlug}
+            class="inline-flex items-center justify-center py-1.5 text-[11px] font-medium rounded-lg border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+          >
+            测评配套
+          </a>
+        )}
+        <a
+          href={airport.affUrl}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          class={`inline-flex items-center justify-center py-1.5 text-[11px] font-bold rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors shadow-sm ${
+            airport.reviewSlug ? 'col-span-1' : 'col-span-2'
+          }`}
+        >
+          直达官网
+        </a>
+      </div>
+    </div>
+  </div>
+)}

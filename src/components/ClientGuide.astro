@@ -1,0 +1,53 @@
+---
+import { clientsData } from '../data/clients';
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {clientsData.map(client => (
+    <div class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700/80 p-6 flex flex-col justify-between hover:border-blue-400 dark:hover:border-blue-500 shadow-sm hover:shadow-md transition-all">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl p-2 bg-slate-100 dark:bg-slate-700 rounded-xl">{client.icon}</span>
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white text-base">
+                {client.name}
+              </h3>
+              <span class="text-xs text-slate-500 dark:text-slate-400">
+                平台：{client.platform}
+              </span>
+            </div>
+          </div>
+          {client.recommended && (
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800">
+              强烈推荐
+            </span>
+          )}
+        </div>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+          {client.desc}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2 pt-4 border-t border-slate-100 dark:border-slate-700">
+        <a
+          href={client.downloadUrl}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          class="flex items-center justify-center gap-1 px-3 py-2 text-xs font-semibold rounded-lg bg-slate-900 hover:bg-black text-white dark:bg-slate-700 dark:hover:bg-slate-600 transition-colors"
+        >
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+          </svg>
+          下载安装包
+        </a>
+        <a
+          href={client.tutorialUrl}
+          class="flex items-center justify-center gap-1 px-3 py-2 text-xs font-semibold rounded-lg bg-blue-50 text-blue-600 hover:bg-blue-100 dark:bg-blue-950/60 dark:text-blue-300 transition-colors"
+        >
+          配置教程
+        </a>
+      </div>
+    </div>
+  ))}
+</div>

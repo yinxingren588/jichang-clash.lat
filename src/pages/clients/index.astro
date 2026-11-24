@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ClientGuide from '../../components/ClientGuide.astro';
+---
+
+<BaseLayout
+  title="Clash / Sing-box / 小火箭 全平台官方客户端下载中心 (Win/Mac/Android/iOS) | 机场clash"
+  description="2026 最新官方开源 Clash Verge Rev、Mihomo Party、Clash Meta for Android、Shadowrocket (小火箭) 及 Sing-box 客户端下载。提供 GitHub 官方正版下载渠道及系统安装避坑指南。"
+  keywords="Clash下载, Clash Verge Rev下载, Mihomo Party下载, Shadowrocket下载, 小火箭, Sing-box下载, Clash Meta for Android, 翻墙客户端, 代理软件下载"
+  canonicalPath="/clients"
+>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+    <!-- Header -->
+    <div class="space-y-4 text-center max-w-4xl mx-auto">
+      <nav class="flex items-center justify-center gap-2 text-xs text-slate-500">
+        <a href="/" class="hover:text-blue-600">首页</a>
+        <span>/</span>
+        <span class="text-blue-600 font-medium">客户端下载</span>
+      </nav>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
+        📱 全平台 Clash / 代理客户端官方下载
+      </h1>
+      <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        安全第一！本站仅提供官方 GitHub 开源 Releases 及官方 App Store 正规下载入口，拒绝任何第三方二次打包修改版，彻底杜绝木马后门风险。
+      </p>
+    </div>
+
+    <!-- Client Cards Component -->
+    <ClientGuide />
+
+    <!-- Platform Installation Notes & Tips -->
+    <div class="bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700/80 p-6 sm:p-8 space-y-6 shadow-sm">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white">
+        🛠️ 各平台客户端安装与常见报错避坑指南
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-600 dark:text-slate-300">
+        <!-- Windows Tips -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-700 space-y-2">
+          <div class="font-bold text-slate-900 dark:text-white flex items-center gap-2 text-base">
+            <span>🪟 Windows 平台避坑</span>
+          </div>
+          <ul class="list-disc list-inside space-y-1.5 text-xs sm:text-sm">
+            <li><strong>推荐客户端</strong>：首选 <strong>Clash Verge Rev</strong>，其次推荐颜值极高的 <strong>Mihomo Party</strong>。</li>
+            <li><strong>SmartScreen 拦截提示</strong>：若安装时提示“Windows 已保护你的电脑（未知发布者）”，点击【更多信息】->【仍要运行】即可正常安装。</li>
+            <li><strong>TUN 虚拟网卡模式</strong>：若某些软件或游戏无法走代理，在设置中安装“服务模式 (Service Mode)”，即可开启 TUN 模式实现全局流量透明加速。</li>
+          </ul>
+        </div>
+
+        <!-- macOS Tips -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-700 space-y-2">
+          <div class="font-bold text-slate-900 dark:text-white flex items-center gap-2 text-base">
+            <span>🍏 macOS 平台避坑</span>
+          </div>
+          <ul class="list-disc list-inside space-y-1.5 text-xs sm:text-sm">
+            <li><strong>架构区分</strong>：Apple Silicon（M1/M2/M3/M4 系列芯片）请务必下载 <code>aarch64.dmg</code>；Intel 老款 Mac 请下载 <code>x64.dmg</code>。</li>
+            <li><strong>提示“文件已损坏”</strong>：由于未签名，macOS 可能会提示无法打开。请打开【终端】执行以下命令并回车：<br />
+              <code class="block mt-1 p-2 rounded bg-slate-200 dark:bg-slate-800 text-blue-600 dark:text-blue-400 font-mono text-[11px] select-all">sudo xattr -r -d com.apple.quarantine /Applications/Clash\ Verge.app</code>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Android Tips -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-700 space-y-2">
+          <div class="font-bold text-slate-900 dark:text-white flex items-center gap-2 text-base">
+            <span>🤖 Android 安卓平台避坑</span>
+          </div>
+          <ul class="list-disc list-inside space-y-1.5 text-xs sm:text-sm">
+            <li><strong>推荐客户端</strong>：首选 <strong>Clash Meta for Android (CMFA)</strong> 或 <strong>Surfboard</strong>。</li>
+            <li><strong>后台保活与电量优化</strong>：在手机【系统设置】->【应用管理】中将 Clash 的电池优化设置为“无限制/允许后台高耗电运行”，以防系统息屏时自动杀掉代理进程。</li>
+          </ul>
+        </div>
+
+        <!-- iOS Tips -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-700 space-y-2">
+          <div class="font-bold text-slate-900 dark:text-white flex items-center gap-2 text-base">
+            <span>🚀 iOS 苹果平台避坑</span>
+          </div>
+          <ul class="list-disc list-inside space-y-1.5 text-xs sm:text-sm">
+            <li><strong>下载方式</strong>：国区 App Store 无法搜到代理软件，需登录非国区（如美区、日区、港区）Apple ID。</li>
+            <li><strong>主流推荐</strong>：<strong>Shadowrocket（小火箭，售价 $2.99）</strong> 性价比最高且最容易上手；进阶玩家可选择 <strong>Loon</strong> 或 <strong>Quantumult X</strong>。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center pt-6 border-t border-slate-100 dark:border-slate-700">
+        <a href="/tutorials/clash-guide" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md transition-all">
+          查看小白新手保姆级图文配置教程 &rarr;
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

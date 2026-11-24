@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AirportCard from '../../components/AirportCard.astro';
+import { airportsData, filterTabs } from '../../data/airports';
+---
+
+<BaseLayout
+  title="2026 精选高速 Clash 机场推荐榜单 (全部34家) | 机场clash"
+  description="2026 最新精选 34 家高速稳定 Clash 机场评测排行榜。严选 IPLC/IEPL 国际专线与优质 BGP 中继，晚高峰 4K/8K 极速秒开，全节点解锁 Netflix 与 ChatGPT，附带独家专属优惠折扣码。"
+  keywords="2026机场推荐, 机场排行榜, 高速专线机场, IPLC机场, IEPL专线, 便宜机场, 稳定机场, Clash机场, 科学上网梯子, 机场优惠码"
+  canonicalPath="/airports"
+>
+  <div class="max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-10">
+    <!-- Breadcrumb & Header -->
+    <div class="space-y-4 text-center max-w-4xl mx-auto">
+      <nav class="flex items-center justify-center gap-2 text-xs text-slate-500">
+        <a href="/" class="hover:text-blue-600">首页</a>
+        <span>/</span>
+        <span class="text-blue-600 font-medium">机场精选推荐</span>
+      </nav>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
+        🏆 2026 精选高速 Clash 机场推荐榜
+      </h1>
+      <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        本页面汇集全网严格实测甄选的 34 家优质机场节点。综合考量线路架构、晚高峰网络抖动、流媒体与 ChatGPT 原生解锁状态，支持即时分类筛选。
+      </p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="flex flex-wrap items-center justify-center gap-2 pt-2">
+      {filterTabs.map((tab, idx) => (
+        <button
+          type="button"
+          data-filter={tab.id}
+          class={`filter-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all border border-slate-200 dark:border-slate-700 cursor-pointer ${
+            idx === 0
+              ? 'bg-blue-600 text-white shadow-sm'
+              : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:border-blue-400'
+          }`}
+        >
+          {tab.label}
+        </button>
+      ))}
+    </div>
+
+    <!-- Cards Grid: 隐形人独占第一排，其余一排五个 -->
+    <div id="airports-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 pt-4">
+      {airportsData.map((airport, index) => (
+        <AirportCard airport={airport} index={index} isFeatured={index === 0} />
+      ))}
+    </div>
+
+    <!-- Bottom Help Banner -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-900 rounded-3xl p-8 border border-blue-100 dark:border-slate-700 text-center space-y-4 max-w-4xl mx-auto mt-16">
+      <h3 class="text-xl font-bold text-slate-900 dark:text-white">不知道如何挑选适合自己的套餐？</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        如果您看重晚高峰看 4K/8K 视频和外服游戏，建议首选 <strong>纯正 IPLC/IEPL 专线</strong> 机场；如果平时仅偶尔查资料查论文，可选用 <strong>不限时长按量付费</strong> 套餐。
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <a href="/comparison" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm shadow-md transition-all">
+          查看 34 家机场横向参数对比 &rarr;
+        </a>
+        <a href="/tutorials/clash-guide" class="px-5 py-2.5 rounded-xl bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 font-bold text-xs sm:text-sm hover:bg-slate-100 transition-all">
+          查看 Clash 客户端新手教程
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

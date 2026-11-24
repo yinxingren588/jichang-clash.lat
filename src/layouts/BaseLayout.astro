@@ -1,0 +1,215 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FloatingSidebar from '../components/FloatingSidebar.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  canonicalPath?: string;
+}
+
+const {
+  title = "机场clash - 2026 最新精选高速 Clash 机场推荐与测评排行榜 | jichang-clash.lat",
+  description = "机场clash (jichang-clash.lat) 专注于 2026 最新高速稳定 Clash 机场推荐与评测导航。精选优质 IPLC/IEPL 专线机场，支持 4K/8K 流媒体、Netflix、ChatGPT 原生解锁，附带全平台 Clash 客户端下载与新手配置教程及专属折扣优惠码。",
+  keywords = "机场clash, 机场推荐, clash机场, 2026机场推荐, IPLC专线机场, 翻墙机场, 科学上网, clash verge rev下载, shadowrocket节点, 订阅转换, 机场优惠码",
+  canonicalPath = ""
+} = Astro.props;
+
+const canonicalUrl = `https://jichang-clash.lat${canonicalPath}`;
+---
+
+<!doctype html>
+<html lang="zh-CN" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="机场clash" />
+    <meta property="og:image" content="https://jichang-clash.lat/logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalUrl} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="https://jichang-clash.lat/logo.png" />
+
+    <!-- JSON-LD Structured Data for Google -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "机场clash",
+      "alternateName": "jichang-clash.lat",
+      "url": "https://jichang-clash.lat",
+      "description": description,
+      "inLanguage": "zh-CN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://jichang-clash.lat/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    })} />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col font-sans antialiased selection:bg-blue-600 selection:text-white">
+    <Header />
+    
+    <main class="flex-grow">
+      <slot />
+    </main>
+
+    <!-- Draggable Floating Quick Sidebar -->
+    <FloatingSidebar />
+
+    <Footer />
+
+    <!-- Toast Notification Container -->
+    <div
+      id="toast-notification"
+      class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 ease-out bg-slate-900 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 border border-slate-700"
+    >
+      <div class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-white" id="toast-title">复制成功</p>
+        <p class="text-[11px] text-slate-300" id="toast-body">优惠码已成功复制到剪贴板</p>
+      </div>
+    </div>
+
+    <!-- Global Client Logic -->
+    <script>
+      // Coupon Copy Handler
+      document.addEventListener('DOMContentLoaded', () => {
+        const copyButtons = document.querySelectorAll('.copy-coupon-btn');
+        const toast = document.getElementById('toast-notification');
+        const toastBody = document.getElementById('toast-body');
+
+        copyButtons.forEach(btn => {
+          btn.addEventListener('click', async (e) => {
+            const target = e.currentTarget as HTMLButtonElement;
+            const code = target.getAttribute('data-code');
+            if (!code) return;
+
+            try {
+              await navigator.clipboard.writeText(code);
+              const originalText = target.innerText;
+              target.innerText = '已复制!';
+              target.classList.add('bg-emerald-600', 'text-white');
+
+              if (toast && toastBody) {
+                toastBody.innerText = `优惠码【${code}】已复制，前往结算页粘贴即可`;
+                toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+                toast.classList.add('translate-y-0', 'opacity-100');
+
+                setTimeout(() => {
+                  toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+                  toast.classList.remove('translate-y-0', 'opacity-100');
+                  target.innerText = originalText;
+                  target.classList.remove('bg-emerald-600', 'text-white');
+                }, 2800);
+              }
+            } catch (err) {
+              console.error('Failed to copy', err);
+            }
+          });
+        });
+
+        // Filter Tabs Handler with Invisible pinned & Shuffled Keyword Lists
+        const filterBtns = document.querySelectorAll('.filter-tab-btn');
+        const grid = document.getElementById('airports-grid');
+        
+        if (grid) {
+          const originalCards = Array.from(grid.querySelectorAll('.airport-card'));
+          const invisibleCard = originalCards.find(c => c.getAttribute('data-id') === 'invisible') || originalCards[0];
+
+          // Fisher-Yates shuffle helper
+          const shuffle = (array: Element[]) => {
+            const arr = [...array];
+            for (let i = arr.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+          };
+
+          filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+              const category = btn.getAttribute('data-filter');
+              
+              // 1. Update tab active state
+              filterBtns.forEach(b => {
+                b.classList.remove('bg-blue-600', 'text-white', 'shadow-sm');
+                b.classList.add('bg-white', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300');
+              });
+              btn.classList.add('bg-blue-600', 'text-white', 'shadow-sm');
+              btn.classList.remove('bg-white', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300');
+
+              if (category === 'all') {
+                // Restore exact original curated order for "全部品牌"
+                originalCards.forEach((card) => {
+                  grid.appendChild(card);
+                  (card as HTMLElement).style.display = '';
+                  const rankBadge = card.querySelector('.card-rank-num');
+                  if (rankBadge) {
+                    const origRank = rankBadge.getAttribute('data-original-rank');
+                    if (origRank) rankBadge.textContent = `#${origRank}`;
+                  }
+                });
+              } else {
+                // 1. Invisible is ALWAYS at the very top (first)
+                grid.appendChild(invisibleCard);
+                (invisibleCard as HTMLElement).style.display = '';
+
+                // 2. Filter other matching cards
+                const otherMatching = originalCards.filter(card => {
+                  if (card === invisibleCard) return false;
+                  const cardCats = JSON.parse(card.getAttribute('data-categories') || '[]');
+                  return cardCats.includes(category);
+                });
+
+                // 3. Shuffle matching other cards
+                const shuffledOthers = shuffle(otherMatching);
+
+                // 4. Append shuffled cards and update sequential rank #2, #3, ...
+                shuffledOthers.forEach((card, idx) => {
+                  grid.appendChild(card);
+                  (card as HTMLElement).style.display = '';
+                  const rankBadge = card.querySelector('.card-rank-num');
+                  if (rankBadge) {
+                    rankBadge.textContent = `#${idx + 2}`;
+                  }
+                });
+
+                // 5. Hide non-matching cards
+                const nonMatching = originalCards.filter(card => card !== invisibleCard && !otherMatching.includes(card));
+                nonMatching.forEach(card => {
+                  (card as HTMLElement).style.display = 'none';
+                });
+              }
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

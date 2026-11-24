@@ -1,0 +1,63 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-slate-900 text-slate-400 border-t border-slate-800 mt-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      
+      <!-- Brand column -->
+      <div class="md:col-span-2 space-y-4">
+        <div class="flex items-center gap-2.5">
+          <img src="/logo.png" alt="机场clash" class="w-8 h-8 object-contain" />
+          <span class="text-xl font-bold text-white">机场clash</span>
+          <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">jichang-clash.lat</span>
+        </div>
+        <p class="text-sm text-slate-400 max-w-md leading-relaxed">
+          专注于 2026 最新优质高速 Clash 机场推荐、IPLC 专线测评与翻墙避坑指南。帮助开发者、外贸人员、海归留学生及科研工作者挑选稳定、高速、晚高峰不卡顿的订阅节点服务。
+        </p>
+        <div class="text-xs text-slate-500">
+          官方唯一正式主域名：<span class="text-blue-400 font-mono">https://jichang-clash.lat</span>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">快捷导航</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/airports" class="hover:text-white transition-colors">🔥 热门机场推荐</a></li>
+          <li><a href="/comparison" class="hover:text-white transition-colors">📊 机场参数横向比对</a></li>
+          <li><a href="/clients" class="hover:text-white transition-colors">📱 Clash 客户端下载</a></li>
+          <li><a href="/tutorials/clash-guide" class="hover:text-white transition-colors">📘 Clash 新手配置教程</a></li>
+          <li><a href="/faq" class="hover:text-white transition-colors">❓ 常见避坑问答</a></li>
+          <li><a href="/about" class="hover:text-white transition-colors">⚖️ 评测标准与免责</a></li>
+        </ul>
+      </div>
+
+      <!-- Compliance & Disclaimer -->
+      <div>
+        <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">免责声明</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          本站所有评测数据与技术教程仅供网络安全学习、跨境学术研究及技术交流使用。请严格遵守所在国家与地区法律法规，严禁利用网络代理从事任何违法犯罪活动。
+        </p>
+        <div class="mt-4 text-xs text-slate-500">
+          <p>更新时间：2026年最新收录</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom copyright -->
+    <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+      <div>
+        &copy; {currentYear} 机场clash (<a href="https://jichang-clash.lat" class="hover:text-slate-400">jichang-clash.lat</a>). All rights reserved.
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="/about" class="hover:text-slate-400">关于本站</a>
+        <a href="/about#privacy" class="hover:text-slate-400">隐私政策</a>
+        <a href="/about#terms" class="hover:text-slate-400">服务条款</a>
+        <a href="/sitemap" class="hover:text-slate-400">网站地图</a>
+      </div>
+    </div>
+  </div>
+</footer>

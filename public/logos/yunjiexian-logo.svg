@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient (Dark Slate / Deep Forest Sage) -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1815"/>
+      <stop offset="50%" stop-color="#122520"/>
+      <stop offset="100%" stop-color="#1a332d"/>
+    </linearGradient>
+
+    <!-- Cloud / Horizon Line Gradient (Sage to Emerald to Gold) -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="40%" stop-color="#10B981"/>
+      <stop offset="75%" stop-color="#A7F3D0"/>
+      <stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
+
+    <!-- Cloud Body Gradient -->
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D1FAE5"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="200" height="200" rx="44" fill="url(#bgGrad)"/>
+  <rect width="196" height="196" x="2" y="2" rx="42" fill="none" stroke="#10B981" stroke-width="2" stroke-opacity="0.3"/>
+
+  <!-- Subtle Horizon Aura -->
+  <ellipse cx="100" cy="100" rx="60" ry="24" fill="#10B981" opacity="0.12" filter="url(#softGlow)"/>
+
+  <!-- Concept: Cloud crossed by Horizon Boundary Line (云与界线) -->
+  <g transform="translate(100, 96)">
+    <!-- Lower Cloud Segment -->
+    <path d="M -44,18 C -52,18 -58,12 -58,4 C -58,-4 -52,-10 -44,-10 C -42,-18 -34,-26 -22,-26 C -18,-26 -14,-24 -11,-22 C -6,-32 6,-38 18,-36 C 30,-34 38,-24 38,-12 C 48,-10 54,-2 54,8 C 54,18 46,24 36,24 L -44,24 Z" fill="url(#cloudGrad)" opacity="0.9" filter="url(#softGlow)"/>
+
+    <!-- Dynamic Boundary Laser Line (界线 - Skyline horizon cutting across infinity) -->
+    <line x1="-70" y1="6" x2="70" y2="6" stroke="url(#lineGrad)" stroke-width="4.5" stroke-linecap="round" filter="url(#softGlow)"/>
+    <line x1="-50" y1="14" x2="50" y2="14" stroke="#FCD34D" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+
+    <!-- Crossing Speed Knot / Pulse Node -->
+    <circle cx="16" cy="6" r="6" fill="#FCD34D" filter="url(#softGlow)"/>
+    <circle cx="16" cy="6" r="3" fill="#FFFFFF"/>
+
+    <!-- Modern Upper Atmospheric Arch -->
+    <path d="M -36,-14 C -12,-30 24,-28 42,-8" fill="none" stroke="#34D399" stroke-width="2.2" stroke-dasharray="6 4" opacity="0.8"/>
+  </g>
+
+  <!-- Constellation Sparks -->
+  <polygon points="152,46 155,53 162,55 155,57 152,64 149,57 142,55 149,53" fill="#FCD34D"/>
+  <circle cx="44" cy="144" r="3" fill="#34D399" opacity="0.8"/>
+  <circle cx="160" cy="140" r="2.5" fill="#A7F3D0" opacity="0.7"/>
+</svg>

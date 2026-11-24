@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="机场评测准则、打分体系与免责声明 | 机场clash"
+  description="了解 机场clash 的评测准则、测速环境与免责声明。我们坚持以客观数据为基础，为用户推荐高性价比、低延迟、高稳定的优质节点。"
+  keywords="关于本站, 机场评测准则, 测速打分标准, 节点监控准则, 免责声明, 机场clash"
+  canonicalPath="/about"
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-10">
+    <!-- Header & Breadcrumbs -->
+    <div class="space-y-4 border-b border-slate-200 dark:border-slate-800 pb-8 text-center sm:text-left">
+      <nav class="flex items-center justify-center sm:justify-start gap-2 text-xs text-slate-500 mb-2">
+        <a href="/" class="hover:text-blue-600">首页</a>
+        <span>/</span>
+        <span class="text-blue-600 font-medium">评测准则</span>
+      </nav>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+        🎯 机场评测准则与量化打分体系
+      </h1>
+      <p class="text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        面对市面上层出不穷、良莠不齐的翻墙机场与跑路风险，<strong>机场clash</strong> 坚持以客观真实的晚高峰测速数据与透明的评测机制为标准，帮助广大用户避坑筛选。
+      </p>
+    </div>
+
+    <!-- Rating System (Weight Distribution) -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white">📊 综合评分权重分配说明 (满分 5.0)</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-1">
+          <div class="text-xs text-blue-600 dark:text-blue-400 font-bold uppercase tracking-wider">权重 30%</div>
+          <div class="font-bold text-slate-900 dark:text-white text-base">晚高峰速率与延迟</div>
+          <p class="text-xs text-slate-500 leading-relaxed">在 20:00-24:00 高峰期针对 4K/8K 视频拖拽缓冲时间及网络抖动测试。</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-1">
+          <div class="text-xs text-indigo-600 dark:text-indigo-400 font-bold uppercase tracking-wider">权重 30%</div>
+          <div class="font-bold text-slate-900 dark:text-white text-base">节点连通率与抗封锁</div>
+          <p class="text-xs text-slate-500 leading-relaxed">内网专线质量、敏感时期是否频繁断流或掉线，全天候在线率监测。</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-1">
+          <div class="text-xs text-purple-600 dark:text-purple-400 font-bold uppercase tracking-wider">权重 20%</div>
+          <div class="font-bold text-slate-900 dark:text-white text-base">流媒体与 AI 工具解锁</div>
+          <p class="text-xs text-slate-500 leading-relaxed">Netflix 4K 非自制剧、Disney+、ChatGPT-4o、Claude 及 TikTok 原生解锁。</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-1">
+          <div class="text-xs text-emerald-600 dark:text-emerald-400 font-bold uppercase tracking-wider">权重 10%</div>
+          <div class="font-bold text-slate-900 dark:text-white text-base">价格性价比与按量机制</div>
+          <p class="text-xs text-slate-500 leading-relaxed">月付门槛是否亲民、流量配额是否虚标、是否提供不限时按量计费。</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 space-y-1 sm:col-span-2 md:col-span-2">
+          <div class="text-xs text-amber-600 dark:text-amber-400 font-bold uppercase tracking-wider">权重 10%</div>
+          <div class="font-bold text-slate-900 dark:text-white text-base">售后支持与工单响应</div>
+          <p class="text-xs text-slate-500 leading-relaxed">客服工单响应时效、Telegram 运维通知频道活跃度与故障修复效率。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Review Principles -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white">🎯 我们的核心收录原则</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80 space-y-2">
+          <div class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <span class="text-blue-600">🛡️</span> 坚决拒绝跑路云与劣质直连
+          </div>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+            严禁收录一上来就推 99 元终身套餐的圈钱小站。优先收录具备成熟运营团队、正规工单机制与 BGP 中继或 IPLC 专线冗余的机场。
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80 space-y-2">
+          <div class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <span class="text-indigo-600">⚡</span> 杜绝虚假测速宣传
+          </div>
+          <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+            所有上榜机场均在晚间 20:00 - 23:00 网络高峰期实测，杜绝“凌晨闲时虚标 1000M、晚上高峰卡成 PPT”的虚假表现。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compliance & Terms of Service -->
+    <section id="terms" class="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80 space-y-3 scroll-mt-24">
+      <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+        <span>⚖️</span>
+        <span>服务条款与合规声明 (Terms of Service)</span>
+      </h3>
+      <div class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed space-y-2">
+        <p>1. <strong>学术科研与交流目的</strong>：本站（jichang-clash.lat）所有评测报告、网络通信协议解析、参数对比及 Clash 配置教程仅作为网络安全技术交流、跨境学术科研与外贸办公学习参考。</p>
+        <p>2. <strong>法律合规准则</strong>：使用者应严格遵守所在国家与地区的法律法规，严禁利用网络代理从事任何违法犯罪、破坏公共网络安全或侵犯他人合法权益之行为。</p>
+        <p>3. <strong>客观中立与推广透明</strong>：为保障日常服务器运维与长线多节点晚高峰真实压测开销，本站部分外链包含推广返利标识（Affiliate）。我们始终坚持真实测速数据优先，推广不会增加读者的任何购买成本，且均提供独家立减优惠码。</p>
+      </div>
+    </section>
+
+    <!-- Privacy Policy -->
+    <section id="privacy" class="p-6 rounded-2xl bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-3 scroll-mt-24">
+      <h3 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+        <span>🔒</span>
+        <span>用户隐私保护政策 (Privacy Policy)</span>
+      </h3>
+      <div class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed space-y-2">
+        <p>1. <strong>零日志与零数据收集</strong>：本站为全静态编译架构（Static Site），绝不建立任何用户个人数据库，绝不收集、记录、分析或倒卖读者的任何浏览轨迹、IP 地址或搜索偏好。</p>
+        <p>2. <strong>无订阅中转窃取</strong>：本站所有客户端教程与问答均指导用户直接在本地客户端与官方服务商之间建立加密连接，绝不提供任何经过第三方服务器中转的订阅劫持服务。</p>
+        <p>3. <strong>本地偏好存储</strong>：网站的暗黑模式切换与快捷栏折叠仅保存在读者本机的 LocalStorage 浏览器沙盒中，关闭浏览器或清空缓存即可随时清除。</p>
+      </div>
+    </section>
+
+    <div class="text-center pt-4">
+      <a href="/airports" class="text-sm font-semibold text-blue-600 hover:underline">
+        &larr; 查看精选推荐机场列表
+      </a>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="404 - 页面未找到 | 机场clash"
+  description="抱歉，您访问的页面不存在或已被移除。您可以返回首页浏览 2026 最新精选高速 Clash 机场推荐榜单与配置教程。"
+  canonicalPath="/404"
+>
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 py-20 text-center space-y-6">
+    <div class="inline-flex items-center justify-center w-24 h-24 rounded-3xl bg-blue-50 dark:bg-slate-800 border border-blue-100 dark:border-slate-700 text-5xl shadow-sm">
+      🧭
+    </div>
+
+    <div class="space-y-2">
+      <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">
+        HTTP 404 ERROR
+      </span>
+      <h1 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white">
+        抱歉，该页面似乎迷航了
+      </h1>
+      <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400 max-w-md mx-auto leading-relaxed">
+        您所请求的页面地址可能已变更或被迁移。别担心，您可以通过以下快捷入口继续浏览本站的核心内容：
+      </p>
+    </div>
+
+    <!-- Quick Action Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 max-w-lg mx-auto text-left">
+      <a
+        href="/"
+        class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition-all group"
+      >
+        <div class="text-lg mb-1">🏠</div>
+        <div class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
+          返回网站首页
+        </div>
+        <p class="text-xs text-slate-400">浏览 2026 全球优质专线质量监测</p>
+      </a>
+
+      <a
+        href="/airports"
+        class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition-all group"
+      >
+        <div class="text-lg mb-1">🏆</div>
+        <div class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
+          精选专线榜单
+        </div>
+        <p class="text-xs text-slate-400">甄选 34 家真实测速优质节点</p>
+      </a>
+
+      <a
+        href="/faq"
+        class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition-all group"
+      >
+        <div class="text-lg mb-1">❓</div>
+        <div class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
+          58 个常见问答 FAQ
+        </div>
+        <p class="text-xs text-slate-400">解决专线原理与日常报错难题</p>
+      </a>
+
+      <a
+        href="/tutorials/clash-guide"
+        class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition-all group"
+      >
+        <div class="text-lg mb-1">📘</div>
+        <div class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
+          Clash 新手配置教程
+        </div>
+        <p class="text-xs text-slate-400">零基础小白保姆级图文指导</p>
+      </a>
+    </div>
+
+    <div class="pt-6">
+      <a
+        href="/"
+        class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md transition-all"
+      >
+        &larr; 返回首页
+      </a>
+    </div>
+  </div>
+</BaseLayout>

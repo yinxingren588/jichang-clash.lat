@@ -1,0 +1,112 @@
+---
+import { airportsData } from '../data/airports';
+---
+
+<div class="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-800/90 shadow-sm">
+  <table class="w-full text-left border-collapse">
+    <thead>
+      <tr class="bg-slate-50 dark:bg-slate-900/60 border-b border-slate-200 dark:border-slate-700/80 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+        <th class="py-4 px-4 sm:px-6">品牌名称</th>
+        <th class="py-4 px-4">专线类型</th>
+        <th class="py-4 px-4">起步价格</th>
+        <th class="py-4 px-4">流量套餐</th>
+        <th class="py-4 px-4">高峰速率</th>
+        <th class="py-4 px-4">流媒体 & AI解锁</th>
+        <th class="py-4 px-4 text-center">优惠码</th>
+        <th class="py-4 px-4 sm:px-6 text-right">官网直达</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100 dark:divide-slate-700/60 text-sm">
+      {airportsData.map((item, index) => (
+        <tr class="hover:bg-slate-50/80 dark:hover:bg-slate-750 transition-colors">
+          <td class="py-4 px-4 sm:px-6 font-medium text-slate-900 dark:text-white">
+            <div class="flex items-center gap-2.5">
+              <span class="w-5 h-5 rounded bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs flex items-center justify-center font-bold shrink-0">
+                {index + 1}
+              </span>
+              {item.logo ? (
+                <img
+                  src={item.logo}
+                  alt={item.name}
+                  class="w-6 h-6 object-contain rounded-md bg-white dark:bg-slate-700 p-0.5 border border-slate-100 dark:border-slate-600 shrink-0"
+                />
+              ) : null}
+              <div>
+                <div class="font-bold flex items-center gap-1.5">
+                  <a href={item.reviewSlug} class="hover:text-blue-600 transition-colors">
+                    {item.name}
+                  </a>
+                </div>
+                {item.badge && (
+                  <span class="text-[10px] text-rose-600 dark:text-rose-400 font-semibold">{item.badge}</span>
+                )}
+              </div>
+            </div>
+          </td>
+          <td class="py-4 px-4 text-slate-600 dark:text-slate-300">
+            {item.lineType ? (
+              <span class="inline-flex items-center px-2 py-0.5 rounded text-xs bg-slate-100 dark:bg-slate-700 font-medium">
+                {item.lineType}
+              </span>
+            ) : (
+              <span class="text-xs text-slate-400">-</span>
+            )}
+          </td>
+          <td class="py-4 px-4">
+            {item.price ? (
+              <span class="text-base font-extrabold text-blue-600 dark:text-blue-400">
+                {item.price}
+              </span>
+            ) : (
+              <span class="text-xs text-slate-400">待更新</span>
+            )}
+          </td>
+          <td class="py-4 px-4 text-slate-600 dark:text-slate-300 text-xs font-medium">
+            {item.traffic || "-"}
+          </td>
+          <td class="py-4 px-4">
+            {item.speedRating ? (
+              <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">
+                ⚡ {item.speedRating}
+              </span>
+            ) : (
+              <span class="text-xs text-slate-400">-</span>
+            )}
+          </td>
+          <td class="py-4 px-4">
+            {item.streamingUnlock && item.streamingUnlock.length > 0 ? (
+              <div class="flex flex-wrap gap-1 max-w-xs">
+                {item.streamingUnlock.slice(0, 3).map(s => (
+                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-medium">
+                    {s}
+                  </span>
+                ))}
+              </div>
+            ) : (
+              <span class="text-xs text-slate-400">-</span>
+            )}
+          </td>
+          <td class="py-4 px-4 text-center">
+            {item.couponCode ? (
+              <span class="inline-block px-2 py-1 rounded bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 font-mono text-xs font-bold border border-amber-200 dark:border-amber-900">
+                {item.couponCode}
+              </span>
+            ) : (
+              <span class="text-slate-400 text-xs">-</span>
+            )}
+          </td>
+          <td class="py-4 px-4 sm:px-6 text-right">
+            <a
+              href={item.affUrl}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white hover:bg-blue-700 shadow-sm transition-all"
+            >
+              前往官网
+            </a>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

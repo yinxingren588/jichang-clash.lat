@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
+---
+
+<BaseLayout
+  title="34家主力机场核心参数深度横向对比表 (2026最新) | 机场clash"
+  description="2026 最新 34 家热门 Clash 机场核心参数横向对比。涵盖月付起步价格、线路类型 (IPLC/IEPL/BGP)、高峰期测速表现、流媒体解锁支持及独家折扣优惠码全景一览。"
+  keywords="机场参数对比, 机场横向评测, 机场价格对比, IPLC对比, 机场速度对比, 便宜机场对比, 翻墙机场选购, 节点性价比"
+  canonicalPath="/comparison"
+>
+  <div class="max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+    <!-- Header -->
+    <div class="space-y-4 text-center max-w-4xl mx-auto">
+      <nav class="flex items-center justify-center gap-2 text-xs text-slate-500">
+        <a href="/" class="hover:text-blue-600">首页</a>
+        <span>/</span>
+        <span class="text-blue-600 font-medium">参数对比</span>
+      </nav>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
+        📊 34 家主力机场核心参数横向对比大表
+      </h1>
+      <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        告别信息差与套路！我们从线路架构、高峰速率、价格门槛、流媒体与 AI 解锁等多维度对 34 家机场进行全景汇总，助您一目了然比对选购。
+      </p>
+    </div>
+
+    <!-- Quick Stats Cards -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+      <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80 shadow-sm text-center">
+        <div class="text-xs text-slate-400 font-medium">最低起步门槛</div>
+        <div class="text-2xl font-black text-emerald-600 dark:text-emerald-400 mt-1">¥9.90 /月</div>
+        <div class="text-[11px] text-slate-500 mt-0.5">平价亲民性价比首选</div>
+      </div>
+      <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80 shadow-sm text-center">
+        <div class="text-xs text-slate-400 font-medium">旗舰专线覆盖</div>
+        <div class="text-2xl font-black text-blue-600 dark:text-blue-400 mt-1">IPLC / IEPL</div>
+        <div class="text-[11px] text-slate-500 mt-0.5">不经GFW · 晚高峰0丢包</div>
+      </div>
+      <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80 shadow-sm text-center">
+        <div class="text-xs text-slate-400 font-medium">高峰测速能力</div>
+        <div class="text-2xl font-black text-indigo-600 dark:text-indigo-400 mt-1">4K / 8K 秒开</div>
+        <div class="text-[11px] text-slate-500 mt-0.5">超大冗余物理带宽</div>
+      </div>
+      <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80 shadow-sm text-center">
+        <div class="text-xs text-slate-400 font-medium">流媒体 & AI 解锁</div>
+        <div class="text-2xl font-black text-purple-600 dark:text-purple-400 mt-1">100% 验证</div>
+        <div class="text-[11px] text-slate-500 mt-0.5">Netflix 4K / ChatGPT</div>
+      </div>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="space-y-4">
+      <div class="flex items-center justify-between text-xs text-slate-500 px-2">
+        <span>💡 提示：表格支持横向滑动浏览全部参数，点击【前往官网】直达对应节点开通页面。</span>
+        <span class="hidden sm:inline-block">更新时间：2026年最新收录</span>
+      </div>
+      <ComparisonTable />
+    </div>
+
+    <!-- Parameter Analysis Guide -->
+    <div class="max-w-4xl mx-auto bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700/80 p-6 sm:p-8 space-y-6 shadow-sm mt-12">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white">
+        💡 机场选购关键参数看点与避坑准则
+      </h2>
+
+      <div class="space-y-4 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-700">
+          <div class="font-bold text-slate-900 dark:text-white mb-1">1. 线路类型到底该怎么挑？（IPLC vs BGP中继）</div>
+          <p>
+            • <strong>IPLC / IEPL 内网专线</strong>：点对点光缆直接直通境外出口，完全不经过 GFW。无论敏感时期还是晚高峰 8 点网络塞车，延迟低至 30-50ms，且绝无断流断连风险，适合对稳定性和视频画质要求极高的用户（如<strong>隐形人、大佬云、暮光加速</strong>）。<br />
+            • <strong>BGP 多线中继隧道</strong>：国内多线 BGP 服务器入口，通过公网隧道中转至海外机房。性价比较高，平时网速非常快，但如果遇到特大网络拥堵可能轻微抖动，适合预算有限的日常主力。
+          </p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-700">
+          <div class="font-bold text-slate-900 dark:text-white mb-1">2. 为什么一定要关注“流媒体与 AI 解锁”？</div>
+          <p>
+            很多廉价机场只提供普通机房 IP（IDC IP），这类 IP 极易被 Netflix、Disney+、TikTok 和 OpenAI（ChatGPT）直接风控封锁。本站推荐的优质节点均配备原生住宅 IP 或经过专业 DNS 解锁分流，确保观影追剧与 AI 生产力工作顺畅无阻。
+          </p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-700">
+          <div class="font-bold text-slate-900 dark:text-white mb-1">3. 付费周期建议</div>
+          <p>
+            新手初次购买建议优先选择<strong>月付或季付</strong>进行体验测试；待确认日常网络环境（如自家的移动/电信/联通宽带）完全稳定匹配后，再使用本站提供的独家优惠码升级至<strong>半年付或年付</strong>以享受最大折扣优惠。
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center pt-4 border-t border-slate-100 dark:border-slate-700">
+        <a href="/airports" class="inline-flex items-center gap-2 text-sm font-bold text-blue-600 dark:text-blue-400 hover:underline">
+          &larr; 返回机场精选卡片瀑布流
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
