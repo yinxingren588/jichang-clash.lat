@@ -6,6 +6,10 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://jichang-clash.lat',
+  server: {
+    port: 4325,
+    host: true
+  },
   integrations: [
     sitemap({
       filter: (page) => !page.includes('/404'),
